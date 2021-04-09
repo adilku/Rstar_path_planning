@@ -138,7 +138,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
 
 void Search::makePrimaryPath(Node *curNode) {
     while (curNode) {
-        //lppath.push_front(*curNode);
+        lppath.push_front(*curNode);
         curNode = curNode->parent;
     }
 }

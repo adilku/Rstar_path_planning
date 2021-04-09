@@ -22,7 +22,7 @@ public:
 
         bool operator()(const Node &lhs,
                         const Node &rhs) const {
-            if (breakingties == CN_SP_BT_GMIN) {
+            if (breakingties == CN_SP_BT_GMIN ) {
                 return std::tuple(lhs.F, lhs.g, lhs.i, lhs.j) < std::tuple(rhs.F, rhs.g, rhs.i, rhs.j);
             } else {
                 return std::tuple(lhs.F, rhs.g, lhs.i, lhs.j) < std::tuple(rhs.F, lhs.g, rhs.i, rhs.j);

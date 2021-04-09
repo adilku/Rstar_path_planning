@@ -62,22 +62,6 @@ SFML/Graphics/VertexBuffer.hpp
 SFML/Graphics/View.hpp
 -
 
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/config.cpp
-config.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/config.h
-gl_const.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/gl_const.h
-tinyxml2.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/tinyxml2.h
-iostream
--
-sstream
--
-algorithm
--
-math.h
--
-
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/config.h
 string
 -
@@ -89,10 +73,6 @@ draw_path.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.h
 search_rstar.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.h
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/environmentoptions.cpp
-environmentoptions.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/environmentoptions.h
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/environmentoptions.h
 gl_const.h
@@ -115,10 +95,6 @@ list
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/main.cpp
 mission.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.h
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/map.cpp
-map.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/map.h
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/map.h
 iostream
@@ -171,10 +147,8 @@ list
 -
 vector
 -
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_container.cpp
-open_container.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_container.h
+iostream
+-
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_container.h
 unordered_map
@@ -191,6 +165,8 @@ gl_const.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.cpp
 open_rstar.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
+iostream
+-
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
 unordered_map
@@ -285,6 +261,8 @@ random
 -
 draw_path.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.h
+open_rstar.h
+/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/searchresult.h
 list
@@ -297,20 +275,6 @@ list
 -
 node.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/tinyxml2.cpp
-tinyxml2.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/tinyxml2.h
-new
--
-stddef.h
--
-stdarg.h
--
-cstddef
--
-cstdarg
--
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/tinyxml2.h
 ctype.h

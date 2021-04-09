@@ -20,8 +20,6 @@ public:
     explicit open_rstar(int breakingties_);
 
 
-
-
     struct compare {
         int breakingties;
 
@@ -31,10 +29,10 @@ public:
 
         bool operator()(const Node_rstar &lhs,
                         const Node_rstar &rhs) const {
-            if (breakingties == CN_SP_BT_GMIN) {
-                return std::tuple(lhs.F, lhs.g, lhs.i, lhs.j) < std::tuple(rhs.F, rhs.g, rhs.i, rhs.j);
+            if (breakingties == CN_SP_BT_GMIN || 1) {
+                return std::tuple(lhs.avoid, lhs.F, lhs.g, lhs.i, lhs.j) < std::tuple(lhs.avoid, rhs.F, rhs.g, rhs.i, rhs.j);
             } else {
-                return std::tuple(lhs.F, rhs.g, lhs.i, lhs.j) < std::tuple(rhs.F, lhs.g, rhs.i, rhs.j);
+                return std::tuple(lhs.avoid, lhs.F, rhs.g, lhs.i, lhs.j) < std::tuple(lhs.avoid, rhs.F, lhs.g, rhs.i, rhs.j);
             }
         }
     };
@@ -48,6 +46,8 @@ public:
     std::unordered_map<std::pair<int, int>, std::set<Node_rstar>::iterator, hash_pair> open_map;
 
     std::set<Node_rstar, compare> open_heap;
+
+    Node_rstar check_min();
 
     Node_rstar get_min();
 

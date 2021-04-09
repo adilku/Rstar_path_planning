@@ -16,6 +16,7 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/map.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
+ /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/searchresult.h
@@ -110,6 +111,7 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
+ /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/searchresult.h
@@ -206,6 +208,7 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
+ /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/searchresult.h

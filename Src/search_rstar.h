@@ -19,6 +19,8 @@
 #include <tuple>
 #include <random>
 #include "draw_path.h"
+#include "open_rstar.h"
+
 
 class Search_Rstar {
 public:
@@ -48,9 +50,15 @@ protected:
 
     void checkNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options, std::vector<Node_rstar> &neighbours);
 
+    void checkRandomNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options, std::vector<std::pair<int, int>> &neighbours);
+
     void makePrimaryPath(Node_rstar *curNode);
 
     void makeSecondaryPath();
+
+    void updateState(Node_rstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
+
+    void ReevaluteState(ILogger *Logger, Node_rstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 };
 
 

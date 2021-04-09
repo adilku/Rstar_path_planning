@@ -15,6 +15,7 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/ilogge
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/map.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/node.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/node_rstar.h
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/open_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/search.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/search_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o: ../../Src/searchresult.h
@@ -109,6 +110,7 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/map.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/mission.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/node.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/node_rstar.h
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/open_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/search.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/search_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/searchresult.h
@@ -205,6 +207,7 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/mission.
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/mission.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/node.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/node_rstar.h
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/open_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/search.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/search_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: ../../Src/searchresult.h

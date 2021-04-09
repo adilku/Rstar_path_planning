@@ -3,6 +3,12 @@
 //
 
 #include "open_rstar.h"
+#include <iostream> //debug
+
+Node_rstar open_rstar::check_min() {
+    std::cout << "debig in open_rstar.cpp " << (*open_heap.begin()).F << (*open_heap.begin()).j << '\n';
+    return *open_heap.begin();
+}
 
 Node_rstar open_rstar::get_min() {
     auto min_val = open_heap.begin();

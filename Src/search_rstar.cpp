@@ -41,17 +41,18 @@ double Search_Rstar::get_heuristic(Point from, Point to, const EnvironmentOption
 
 
 void
-Search_Rstar::checkNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options, std::vector<Node_rstar> &neighbours) {
+Search_Rstar::checkNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options,
+                              std::vector<Node_rstar> &neighbours) {
     double hWeight = options.hweight;
     for (auto &micro_node : DISALLOWED_DIAG_MOVES) {
         int i = micro_node.first;
         int j = micro_node.second;
         if (map.CellOnGrid(v.i + i, v.j + j) && map.CellIsTraversable(v.i + i, v.j + j)) {
-            neighbours.emplace_back(v.i + i, v.j + j,
+            neighbours.emplace_back(v.i + i, v.j + j, 0,
                                     v.g + CN_CELL_SIZE +
                                     hWeight * get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options),
                                     v.g + CN_CELL_SIZE,
-                                    get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options), &v);
+                                    get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options), &v, nullptr);
         }
     }
     if (options.allowdiagonal) {
@@ -67,19 +68,97 @@ Search_Rstar::checkNeighbours(Node_rstar &v, const Map &map, const EnvironmentOp
                         (!vert && !horiz && options.allowsqueeze) ||
                         (vert && horiz)
                             ) {
-                        neighbours.emplace_back(v.i + i, v.j + j,
+                        neighbours.emplace_back(v.i + i, v.j + j, 0,
                                                 v.g + CN_SQRT_TWO +
                                                 hWeight *
                                                 get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(),
                                                               options),
                                                 v.g + CN_SQRT_TWO,
                                                 get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options),
-                                                &v);
+                                                &v, nullptr);
                     }
                 }
             }
         }
     }
+}
+
+void
+Search_Rstar::checkRandomNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options,
+                              std::vector<std::pair<int, int>> &neighbours) {
+    std::vector<std::pair<int, int>> dots = get_dots(v.i, v.j, 4);
+    for (auto &dot : dots) {
+        if (map.CellOnGrid(dot.first, dot.second) && map.CellIsTraversable(dot.first, dot.second)) {
+            neighbours.emplace_back(dot.first, dot.second);
+        }
+    }
+}
+
+
+void Search_Rstar::updateState(Node_rstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map) {
+    double W = options.hweight;
+    if (state.g > W * get_heuristic(map.getCoordinatesStart(), {state.i, state.j}, options)) {
+        auto it = open.open_map.find({state.i, state.j});
+        if (it != open.open_map.end()) {
+            open.erase(it);
+            open.insert(Node_rstar(state.i, state.j, 1, state.g +
+            W * get_heuristic({state.i, state.j}, map.getCoordinatesGoal(), options),
+            state.g, state.g, state.parent, state.predecessors_nodes
+            ));
+        } else if (it == open.open_map.end()) {
+            open.insert(Node_rstar(state.i, state.j, 1, state.g +
+                                                        W * get_heuristic({state.i, state.j}, map.getCoordinatesGoal(), options),
+                                   state.g, state.g, state.parent, state.predecessors_nodes
+            ));
+        }
+    } else {
+        auto it = open.open_map.find({state.i, state.j});
+        if (it != open.open_map.end()) {
+            open.erase(it);
+            open.insert(Node_rstar(state.i, state.j, 0, state.g +
+                                                        W * get_heuristic({state.i, state.j}, map.getCoordinatesGoal(), options),
+                                   state.g, state.g, state.parent, state.predecessors_nodes
+            ));
+        } else if (it == open.open_map.end()) {
+            open.insert(Node_rstar(state.i, state.j, 0, state.g +
+                                                        W * get_heuristic({state.i, state.j}, map.getCoordinatesGoal(), options),
+                                   state.g, state.g, state.parent, state.predecessors_nodes
+            ));
+        }
+    }
+}
+
+void Search_Rstar::ReevaluteState(ILogger *Logger,
+                                  Node_rstar state,
+                                  open_rstar &open,
+                                  const EnvironmentOptions &options,
+                                  const Map &map) {
+    Search cur_search;
+    double W = options.hweight;
+    auto local_search = cur_search.startSearch(Logger, map, options, {(*state.parent).i, (*state.parent).j},
+                                              {state.i, state.j});
+    if (local_search.pathfound) {
+        state.path_to_bp = local_search.lppath;
+        //render.draw_local_path(window, event, local_search.lppath);
+        state.C_low = local_search.pathlength;
+    } else {
+        state.path_to_bp = nullptr;
+    }
+
+    if (state.path_to_bp == nullptr ||
+    (*state.parent).g + state.C_low > W * get_heuristic(map.getCoordinatesStart(), {state.i, state.j}, options)) {
+        double min_val = INT_MAX;
+        for (auto& cur : *state.predecessors_nodes) {
+            if (cur.second + cur.first.g < min_val) {
+                min_val = cur.second + cur.first.g;
+                state.parent = &cur.first;
+                state.C_low = cur.second;
+            }
+        }
+        state.avoid = 1;
+    }
+    state.g = state.parent->g + state.C_low;
+    updateState(state, open, options, map);
 }
 
 
@@ -88,7 +167,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
 
 
     // (node_size * map) / screen = 0.5 -> node_size = (0.5 screen) / map
-    double coef = 0.4;
+    double coef = 0.7;
 
 
     // нужно реализовать новый контейнер для опена, (bool, cost)
@@ -109,9 +188,9 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
 
     //DEBUG local path
     Search cur_search;
-    //SearchResult local_path = cur_search.startSearch(Logger, map, options, map.getCoordinatesStart(), map.getCoordinatesGoal());
+    SearchResult local_path = cur_search.startSearch(Logger, map, options, map.getCoordinatesStart(), map.getCoordinatesGoal());
 
-
+    //std::cout << "debug in searchrstar.cpp pathfound" << local_path.pathlength << '\n';
 
     sf::Event event;
 
@@ -130,7 +209,12 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
         }
 
 
-        //render.draw_path(window, event, local_path);
+        render.draw_local_path(window, event, local_path.lppath);
+
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
 
         //sf::sleep(sf::milliseconds(10000));
 
@@ -146,9 +230,11 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
         int cnt_steps = 0;
 
         open.insert(
-                Node_rstar(start.i, start.j, 1 * get_heuristic(start, goal, options), 0, get_heuristic(start, goal, options),
-                     nullptr
+                Node_rstar(start.i, start.j, 0,  1 * get_heuristic(start, goal, options), 0, get_heuristic(start, goal, options),
+                     nullptr, nullptr
                 ));
+
+        Node_rstar goal_vert(goal.i, goal.j, 1, INT_MAX, 0, 0, nullptr, nullptr);
 
         auto rnd_dots = get_dots(start.i, start.j, 4);
 
@@ -157,10 +243,59 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             render.draw_point(window, event, i.first, i.second, 2);
         }
 
-        while (!open.open_heap.empty()) {
-
+        while (!open.open_heap.empty() && (goal_vert >= open.check_min())) {
+            auto goal_in_open = open.open_map.find({goal.i, goal.j});
+            if (goal_in_open != open.open_map.end()) {
+                if (*(goal_in_open->second) < open.check_min()) {
+                    break;
+                }
+            }
             ++cnt_steps;
-            auto cur_el = open.get_min();
+            auto state = open.get_min();
+            if (state.i != start.i && state.j != start.j && state.path_to_bp == nullptr) {
+                ReevaluteState(Logger, state, open, options, map);
+            } else {
+                close_map[{state.i, state.j}] = state;
+                render.draw_point(window, event, state.i, state.j, 1);
+                if (state.i == goal.i && state.j == goal.j && state.path_to_bp != nullptr) {
+                    std::cout << "debug path\n";
+                    //std::cout << state.path_to_bp.size() << '\n';
+                    //render.draw_local_path(window, event, state.path_to_bp);
+                    break;
+                }
+                std::cout << "debug in search_rstar.cpp" << state.i << ' ' << state.j << '\n';
+                std::vector<std::pair<int, int>> neighbours;
+                checkRandomNeighbours(state, map, options, neighbours);
+                if (get_heuristic({state.i, state.j}, {goal.i, goal.j}, options) < 4) {
+                    neighbours.emplace_back(goal.i, goal.j);
+                    //continue;
+                    //break;
+                }
+                for (auto &neighbour : neighbours) {
+                    if (close_map[{neighbour.first, neighbour.second}].i == -1) {
+                        auto find_el = open.open_map.find({neighbour.first, neighbour.second});
+                        Node_rstar state_to;
+                        state_to.path_to_bp = nullptr;
+                        state_to.C_low = get_heuristic({state.i, state.j}, {neighbour.first, neighbour.second}, options);
+                        if (find_el == open.open_map.end()) {
+                            state_to.i = neighbour.first;
+                            state_to.j = neighbour.second;
+                            state_to.g = INT_MAX;
+                            state_to.parent = nullptr;
+                        } else {
+                            state_to = *find_el->second;
+                        }
+                        if (state_to.parent == nullptr || state.g + state.C_low < state_to.g) {
+                            state_to.g = state.g + state.C_low;
+                            state_to.predecessors_nodes->push_back({state, state_to.C_low});
+                            state_to.parent = &state;
+                            updateState(state_to, open, options, map);
+                        }
+                    }
+                }
+            }
+            std::cout << "debug in search_rstar.cpp open size = " << open.check_min().F << "\n";
+            /*
             close_map[{cur_el.i, cur_el.j}] = cur_el;
             int cur_I = cur_el.i;
             int cur_J = cur_el.j;
@@ -185,8 +320,9 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
                     }
                 }
             }
+             */
         }
-
+        /*
         sresult.pathfound = (searchedGoal != nullptr);
         if (searchedGoal != nullptr) {
             sresult.pathlength = searchedGoal->g;
@@ -208,7 +344,9 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             if (event.type == sf::Event::Closed)
                 window.close();
         }
+
         render.draw_path(window, event, sresult);
+         */
     }
 
     while (window.isOpen()) {

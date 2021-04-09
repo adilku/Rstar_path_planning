@@ -32,7 +32,7 @@ protected:
     };
 
     SearchResult sresult; //This will store the search result
-    std::list<Node_rstar> lppath, hppath; //
+    std::list<Node> lppath, hppath; //
     std::unordered_map<std::pair<int, int>, Node, hash_pair> close_map;
 
     double get_heuristic(Point from, Point to, const EnvironmentOptions &options) const;
