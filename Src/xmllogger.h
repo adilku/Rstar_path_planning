@@ -18,13 +18,13 @@ public:
 
     void saveLog();
 
-    void writeToLogMap(const Map &Map, const std::list<Node_rstar> &path);
+    void writeToLogMap(const Map &Map, const std::list<NodeRstar> &path);
 
     //void writeToLogOpenClose(const typename &open, const typename &close);
 
-    void writeToLogPath(const std::list<Node_rstar> &path);
+    void writeToLogPath(const std::list<NodeRstar> &path);
 
-    void writeToLogHPpath(const std::list<Node_rstar> &hppath);
+    void writeToLogHPpath(const std::list<NodeRstar> &hppath);
 
     void writeToLogNotFound();
 

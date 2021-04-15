@@ -21,7 +21,7 @@ public:
     void draw_obstacles(sf::RenderWindow& temp, const Map& map);
 
     void draw_path(sf::RenderWindow& window, sf::Event event, const SearchResult_rstar& result);
-    void draw_local_path(sf::RenderWindow& window, sf::Event event, std::list<Node> *lppath);
+    void draw_local_path(sf::RenderWindow& window, sf::Event event, std::shared_ptr<std::list<Node>> lppath);
 
     void draw_point(sf::RenderWindow& window, sf::Event event, int i, int j, int color);
 

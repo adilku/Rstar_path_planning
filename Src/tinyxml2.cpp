@@ -984,7 +984,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEnd, int* curLineNumPtr )
     // element will be read by the child.
     //
     // 'endTag' is the end tag for this node, it is returned by a call to a child.
-    // 'parentEnd' is the end tag for the parent, which is filled in and returned.
+    // 'parentEnd' is the end tag for the bp, which is filled in and returned.
 
     while( p && *p ) {
         XMLNode* node = 0;
@@ -1030,7 +1030,7 @@ char* XMLNode::ParseDeep( char* p, StrPair* parentEnd, int* curLineNumPtr )
 
         XMLElement* ele = node->ToElement();
         if ( ele ) {
-            // We read the end tag. Return it to the parent.
+            // We read the end tag. Return it to the bp.
             if ( ele->ClosingType() == XMLElement::CLOSING ) {
                 if ( parentEnd ) {
                     ele->_value.TransferTo( parentEnd );
@@ -2092,7 +2092,7 @@ void XMLDocument::DeleteNode( XMLNode* node )	{
     }
     else {
         // Isn't in the tree.
-        // Use the parent delete.
+        // Use the bp delete.
         // Also, we need to mark it tracked: we 'know'
         // it was never used.
         node->_memPool->SetTracked();

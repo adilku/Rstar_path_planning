@@ -13,6 +13,7 @@ public:
     bool    cutcorners;     //Option that allows to make diagonal moves, when one adjacent cell is untraversable
     double  hweight;
     int breakingties;
+    int numberofstates;  // Number of states generated on current iteration
 };
 
 #endif // ENVIRONMENTOPTIONS_H

@@ -132,7 +132,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     auto endTime = std::chrono::high_resolution_clock::now();
     sresult.time = (std::chrono::duration<double>(endTime - startTime)).count();
     sresult.hppath = &hppath;
-    sresult.lppath = &lppath;
+    sresult.lppath = std::make_shared<std::list<Node>>(lppath);
     return sresult;
 }
 

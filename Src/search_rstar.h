@@ -39,26 +39,23 @@ protected:
     };
 
 
-
-    std::vector<std::pair<int, int>> get_dots(int x, int y, int delta);
-
+    static std::vector<std::pair<int, int>> get_dots(int x, int y, int delta, const EnvironmentOptions &options);
     SearchResult_rstar sresult; //This will store the search result
-    std::list<Node_rstar> lppath, hppath; //
-    std::unordered_map<std::pair<int, int>, Node_rstar, hash_pair> close_map;
+    std::list<NodeRstar> lppath, hppath; //
+    std::unordered_map<std::pair<int, int>, NodeRstar, hash_pair> close_map;
 
     double get_heuristic(Point from, Point to, const EnvironmentOptions &options) const;
 
-    void checkNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options, std::vector<Node_rstar> &neighbours);
 
-    void checkRandomNeighbours(Node_rstar &v, const Map &map, const EnvironmentOptions &options, std::vector<std::pair<int, int>> &neighbours);
+    void CheckRandomNeighbours(NodeRstar &v, const Map &map, const EnvironmentOptions &options, std::vector<std::pair<int, int>> &neighbours);
 
-    void makePrimaryPath(Node_rstar *curNode);
+    void makePrimaryPath(std::shared_ptr<NodeRstar> curNode);
 
     void makeSecondaryPath();
 
-    void updateState(Node_rstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
+    void updateState(NodeRstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 
-    void ReevaluteState(ILogger *Logger, Node_rstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
+    void ReevaluteState(ILogger * Logger, NodeRstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 };
 
 

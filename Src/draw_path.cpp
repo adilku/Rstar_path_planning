@@ -64,7 +64,7 @@ void sfml_draw::draw_path(sf::RenderWindow& window, sf::Event event, const Searc
     }
 }
 
-void sfml_draw::draw_local_path(sf::RenderWindow& window, sf::Event event, std::list<Node> *lppath) {
+void sfml_draw::draw_local_path(sf::RenderWindow& window, sf::Event event, std::shared_ptr<std::list<Node>> lppath) {
     //std::cout << "debug in draw_local_path" << result.lppath->size();
     for (auto &node_cur : *lppath) {
         //std::cout << "debug in draw_path dots" << '\n';

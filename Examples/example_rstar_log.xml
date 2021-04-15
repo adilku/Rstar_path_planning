@@ -60,7 +60,7 @@
     </map>
     <algorithm>
         <searchtype>astar</searchtype>
-        <metrictype>diagonal</metrictype>
+        <metrictype>manhattan</metrictype>
         <breakingties>g-max</breakingties>
         <hweight>1</hweight>
         <allowdiagonal>true</allowdiagonal>

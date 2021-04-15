@@ -2393,24 +2393,24 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 						</object>
 						<reference key="children" ref="1048"/>
-						<nil key="parent"/>
+						<nil key="bp"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">-2</int>
 						<reference key="object" ref="1021"/>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 						<string key="objectName">File's Owner</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">-1</int>
 						<reference key="object" ref="1014"/>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 						<string key="objectName">First Responder</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">-3</int>
 						<reference key="object" ref="1050"/>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 						<string key="objectName">Application</string>
 					</object>
 					<object class="IBObjectRecord">
@@ -2426,7 +2426,7 @@
 							<reference ref="302598603"/>
 							<reference ref="448692316"/>
 						</object>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">19</int>
@@ -2435,7 +2435,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="835318025"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">56</int>
@@ -2444,7 +2444,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="110575045"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">217</int>
@@ -2453,7 +2453,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="789758025"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">83</int>
@@ -2462,7 +2462,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="720053764"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">81</int>
@@ -2481,32 +2481,32 @@
 							<reference ref="579971712"/>
 							<reference ref="1010469920"/>
 						</object>
-						<reference key="parent" ref="379814623"/>
+						<reference key="bp" ref="379814623"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">75</int>
 						<reference key="object" ref="1023925487"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">80</int>
 						<reference key="object" ref="117038363"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">78</int>
 						<reference key="object" ref="49223823"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">72</int>
 						<reference key="object" ref="722745758"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">82</int>
 						<reference key="object" ref="705341025"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">124</int>
@@ -2515,32 +2515,32 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="1065607017"/>
 						</object>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">77</int>
 						<reference key="object" ref="294629803"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">73</int>
 						<reference key="object" ref="776162233"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">79</int>
 						<reference key="object" ref="425164168"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">112</int>
 						<reference key="object" ref="579971712"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">74</int>
 						<reference key="object" ref="1010469920"/>
-						<reference key="parent" ref="720053764"/>
+						<reference key="bp" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">125</int>
@@ -2549,12 +2549,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="759406840"/>
 						</object>
-						<reference key="parent" ref="1025936716"/>
+						<reference key="bp" ref="1025936716"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">126</int>
 						<reference key="object" ref="759406840"/>
-						<reference key="parent" ref="1065607017"/>
+						<reference key="bp" ref="1065607017"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">205</int>
@@ -2577,52 +2577,52 @@
 							<reference ref="288088188"/>
 							<reference ref="82994268"/>
 						</object>
-						<reference key="parent" ref="952259628"/>
+						<reference key="bp" ref="952259628"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">202</int>
 						<reference key="object" ref="437104165"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">198</int>
 						<reference key="object" ref="583158037"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">207</int>
 						<reference key="object" ref="1058277027"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">214</int>
 						<reference key="object" ref="212016141"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">199</int>
 						<reference key="object" ref="296257095"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">203</int>
 						<reference key="object" ref="29853731"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">197</int>
 						<reference key="object" ref="860595796"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">206</int>
 						<reference key="object" ref="1040322652"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">215</int>
 						<reference key="object" ref="790794224"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">218</int>
@@ -2631,7 +2631,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="963351320"/>
 						</object>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">216</int>
@@ -2640,7 +2640,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="769623530"/>
 						</object>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">200</int>
@@ -2654,22 +2654,22 @@
 							<reference ref="859480356"/>
 							<reference ref="795346622"/>
 						</object>
-						<reference key="parent" ref="972420730"/>
+						<reference key="bp" ref="972420730"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">219</int>
 						<reference key="object" ref="948374510"/>
-						<reference key="parent" ref="769623530"/>
+						<reference key="bp" ref="769623530"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">201</int>
 						<reference key="object" ref="96193923"/>
-						<reference key="parent" ref="769623530"/>
+						<reference key="bp" ref="769623530"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">204</int>
 						<reference key="object" ref="679648819"/>
-						<reference key="parent" ref="769623530"/>
+						<reference key="bp" ref="769623530"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">220</int>
@@ -2682,32 +2682,32 @@
 							<reference ref="326711663"/>
 							<reference ref="447796847"/>
 						</object>
-						<reference key="parent" ref="892235320"/>
+						<reference key="bp" ref="892235320"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">213</int>
 						<reference key="object" ref="270902937"/>
-						<reference key="parent" ref="963351320"/>
+						<reference key="bp" ref="963351320"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">210</int>
 						<reference key="object" ref="88285865"/>
-						<reference key="parent" ref="963351320"/>
+						<reference key="bp" ref="963351320"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">221</int>
 						<reference key="object" ref="159080638"/>
-						<reference key="parent" ref="963351320"/>
+						<reference key="bp" ref="963351320"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">208</int>
 						<reference key="object" ref="326711663"/>
-						<reference key="parent" ref="963351320"/>
+						<reference key="bp" ref="963351320"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">209</int>
 						<reference key="object" ref="447796847"/>
-						<reference key="parent" ref="963351320"/>
+						<reference key="bp" ref="963351320"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">57</int>
@@ -2726,47 +2726,47 @@
 							<reference ref="1056857174"/>
 							<reference ref="342932134"/>
 						</object>
-						<reference key="parent" ref="694149608"/>
+						<reference key="bp" ref="694149608"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">58</int>
 						<reference key="object" ref="238522557"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">134</int>
 						<reference key="object" ref="755159360"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">150</int>
 						<reference key="object" ref="908899353"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">136</int>
 						<reference key="object" ref="632727374"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">144</int>
 						<reference key="object" ref="646227648"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">129</int>
 						<reference key="object" ref="609285721"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">143</int>
 						<reference key="object" ref="481834944"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">236</int>
 						<reference key="object" ref="304266470"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">131</int>
@@ -2775,22 +2775,22 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="752062318"/>
 						</object>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">149</int>
 						<reference key="object" ref="1056857174"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">145</int>
 						<reference key="object" ref="342932134"/>
-						<reference key="parent" ref="110575045"/>
+						<reference key="bp" ref="110575045"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">130</int>
 						<reference key="object" ref="752062318"/>
-						<reference key="parent" ref="1046388886"/>
+						<reference key="bp" ref="1046388886"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">24</int>
@@ -2802,27 +2802,27 @@
 							<reference ref="575023229"/>
 							<reference ref="1011231497"/>
 						</object>
-						<reference key="parent" ref="713487014"/>
+						<reference key="bp" ref="713487014"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">92</int>
 						<reference key="object" ref="299356726"/>
-						<reference key="parent" ref="835318025"/>
+						<reference key="bp" ref="835318025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">5</int>
 						<reference key="object" ref="625202149"/>
-						<reference key="parent" ref="835318025"/>
+						<reference key="bp" ref="835318025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">239</int>
 						<reference key="object" ref="575023229"/>
-						<reference key="parent" ref="835318025"/>
+						<reference key="bp" ref="835318025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">23</int>
 						<reference key="object" ref="1011231497"/>
-						<reference key="parent" ref="835318025"/>
+						<reference key="bp" ref="835318025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">295</int>
@@ -2831,7 +2831,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="466310130"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">296</int>
@@ -2841,17 +2841,17 @@
 							<reference ref="102151532"/>
 							<reference ref="237841660"/>
 						</object>
-						<reference key="parent" ref="586577488"/>
+						<reference key="bp" ref="586577488"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">297</int>
 						<reference key="object" ref="102151532"/>
-						<reference key="parent" ref="466310130"/>
+						<reference key="bp" ref="466310130"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">298</int>
 						<reference key="object" ref="237841660"/>
-						<reference key="parent" ref="466310130"/>
+						<reference key="bp" ref="466310130"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">211</int>
@@ -2860,7 +2860,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="785027613"/>
 						</object>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">212</int>
@@ -2870,22 +2870,22 @@
 							<reference ref="680220178"/>
 							<reference ref="731782645"/>
 						</object>
-						<reference key="parent" ref="676164635"/>
+						<reference key="bp" ref="676164635"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">195</int>
 						<reference key="object" ref="680220178"/>
-						<reference key="parent" ref="785027613"/>
+						<reference key="bp" ref="785027613"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">196</int>
 						<reference key="object" ref="731782645"/>
-						<reference key="parent" ref="785027613"/>
+						<reference key="bp" ref="785027613"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">346</int>
 						<reference key="object" ref="967646866"/>
-						<reference key="parent" ref="769623530"/>
+						<reference key="bp" ref="769623530"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">348</int>
@@ -2894,7 +2894,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="698887838"/>
 						</object>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">349</int>
@@ -2909,22 +2909,22 @@
 							<reference ref="672708820"/>
 							<reference ref="537092702"/>
 						</object>
-						<reference key="parent" ref="507821607"/>
+						<reference key="bp" ref="507821607"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">350</int>
 						<reference key="object" ref="605118523"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">351</int>
 						<reference key="object" ref="197661976"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">354</int>
 						<reference key="object" ref="708854459"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">371</int>
@@ -2933,7 +2933,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="439893737"/>
 						</object>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 						<string key="objectName">Main Window</string>
 					</object>
 					<object class="IBObjectRecord">
@@ -2951,7 +2951,7 @@
 							<reference ref="531630843"/>
 							<reference ref="422780221"/>
 						</object>
-						<reference key="parent" ref="972006081"/>
+						<reference key="bp" ref="972006081"/>
 						<string key="objectName">Content View</string>
 					</object>
 					<object class="IBObjectRecord">
@@ -2961,7 +2961,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="941447902"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">376</int>
@@ -2971,7 +2971,7 @@
 							<reference ref="792887677"/>
 							<reference ref="215659978"/>
 						</object>
-						<reference key="parent" ref="302598603"/>
+						<reference key="bp" ref="302598603"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">377</int>
@@ -2980,7 +2980,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="786677654"/>
 						</object>
-						<reference key="parent" ref="941447902"/>
+						<reference key="bp" ref="941447902"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">388</int>
@@ -3004,47 +3004,47 @@
 							<reference ref="596732606"/>
 							<reference ref="393423671"/>
 						</object>
-						<reference key="parent" ref="792887677"/>
+						<reference key="bp" ref="792887677"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">389</int>
 						<reference key="object" ref="159677712"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">390</int>
 						<reference key="object" ref="305399458"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">391</int>
 						<reference key="object" ref="814362025"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">392</int>
 						<reference key="object" ref="330926929"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">393</int>
 						<reference key="object" ref="533507878"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">394</int>
 						<reference key="object" ref="158063935"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">395</int>
 						<reference key="object" ref="885547335"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">396</int>
 						<reference key="object" ref="901062459"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">397</int>
@@ -3053,7 +3053,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="175441468"/>
 						</object>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">398</int>
@@ -3062,7 +3062,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="1058217995"/>
 						</object>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">399</int>
@@ -3071,32 +3071,32 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="18263474"/>
 						</object>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">400</int>
 						<reference key="object" ref="739652853"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">401</int>
 						<reference key="object" ref="1012600125"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">402</int>
 						<reference key="object" ref="214559597"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">403</int>
 						<reference key="object" ref="596732606"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">404</int>
 						<reference key="object" ref="393423671"/>
-						<reference key="parent" ref="786677654"/>
+						<reference key="bp" ref="786677654"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">405</int>
@@ -3109,32 +3109,32 @@
 							<reference ref="941806246"/>
 							<reference ref="1045724900"/>
 						</object>
-						<reference key="parent" ref="769124883"/>
+						<reference key="bp" ref="769124883"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">406</int>
 						<reference key="object" ref="257962622"/>
-						<reference key="parent" ref="18263474"/>
+						<reference key="bp" ref="18263474"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">407</int>
 						<reference key="object" ref="644725453"/>
-						<reference key="parent" ref="18263474"/>
+						<reference key="bp" ref="18263474"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">408</int>
 						<reference key="object" ref="1037576581"/>
-						<reference key="parent" ref="18263474"/>
+						<reference key="bp" ref="18263474"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">409</int>
 						<reference key="object" ref="941806246"/>
-						<reference key="parent" ref="18263474"/>
+						<reference key="bp" ref="18263474"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">410</int>
 						<reference key="object" ref="1045724900"/>
-						<reference key="parent" ref="18263474"/>
+						<reference key="bp" ref="18263474"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">411</int>
@@ -3145,22 +3145,22 @@
 							<reference ref="568384683"/>
 							<reference ref="663508465"/>
 						</object>
-						<reference key="parent" ref="691570813"/>
+						<reference key="bp" ref="691570813"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">412</int>
 						<reference key="object" ref="706297211"/>
-						<reference key="parent" ref="1058217995"/>
+						<reference key="bp" ref="1058217995"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">413</int>
 						<reference key="object" ref="568384683"/>
-						<reference key="parent" ref="1058217995"/>
+						<reference key="bp" ref="1058217995"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">414</int>
 						<reference key="object" ref="663508465"/>
-						<reference key="parent" ref="1058217995"/>
+						<reference key="bp" ref="1058217995"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">415</int>
@@ -3172,32 +3172,32 @@
 							<reference ref="677519740"/>
 							<reference ref="238351151"/>
 						</object>
-						<reference key="parent" ref="767671776"/>
+						<reference key="bp" ref="767671776"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">416</int>
 						<reference key="object" ref="252969304"/>
-						<reference key="parent" ref="175441468"/>
+						<reference key="bp" ref="175441468"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">417</int>
 						<reference key="object" ref="766922938"/>
-						<reference key="parent" ref="175441468"/>
+						<reference key="bp" ref="175441468"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">418</int>
 						<reference key="object" ref="677519740"/>
-						<reference key="parent" ref="175441468"/>
+						<reference key="bp" ref="175441468"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">419</int>
 						<reference key="object" ref="238351151"/>
-						<reference key="parent" ref="175441468"/>
+						<reference key="bp" ref="175441468"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">420</int>
 						<reference key="object" ref="755631768"/>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">450</int>
@@ -3206,7 +3206,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="579392910"/>
 						</object>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">451</int>
@@ -3217,57 +3217,57 @@
 							<reference ref="879586729"/>
 							<reference ref="56570060"/>
 						</object>
-						<reference key="parent" ref="288088188"/>
+						<reference key="bp" ref="288088188"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">452</int>
 						<reference key="object" ref="1060694897"/>
-						<reference key="parent" ref="579392910"/>
+						<reference key="bp" ref="579392910"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">453</int>
 						<reference key="object" ref="859480356"/>
-						<reference key="parent" ref="769623530"/>
+						<reference key="bp" ref="769623530"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">454</int>
 						<reference key="object" ref="795346622"/>
-						<reference key="parent" ref="769623530"/>
+						<reference key="bp" ref="769623530"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">457</int>
 						<reference key="object" ref="65139061"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">459</int>
 						<reference key="object" ref="19036812"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">460</int>
 						<reference key="object" ref="672708820"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">462</int>
 						<reference key="object" ref="537092702"/>
-						<reference key="parent" ref="698887838"/>
+						<reference key="bp" ref="698887838"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">465</int>
 						<reference key="object" ref="879586729"/>
-						<reference key="parent" ref="579392910"/>
+						<reference key="bp" ref="579392910"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">466</int>
 						<reference key="object" ref="56570060"/>
-						<reference key="parent" ref="579392910"/>
+						<reference key="bp" ref="579392910"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">485</int>
 						<reference key="object" ref="82994268"/>
-						<reference key="parent" ref="789758025"/>
+						<reference key="bp" ref="789758025"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">490</int>
@@ -3276,7 +3276,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="992780483"/>
 						</object>
-						<reference key="parent" ref="649796088"/>
+						<reference key="bp" ref="649796088"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">491</int>
@@ -3285,17 +3285,17 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="105068016"/>
 						</object>
-						<reference key="parent" ref="448692316"/>
+						<reference key="bp" ref="448692316"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">492</int>
 						<reference key="object" ref="105068016"/>
-						<reference key="parent" ref="992780483"/>
+						<reference key="bp" ref="992780483"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">494</int>
 						<reference key="object" ref="976324537"/>
-						<reference key="parent" ref="0"/>
+						<reference key="bp" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">496</int>
@@ -3304,7 +3304,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="446991534"/>
 						</object>
-						<reference key="parent" ref="941447902"/>
+						<reference key="bp" ref="941447902"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">497</int>
@@ -3322,32 +3322,32 @@
 							<reference ref="231811626"/>
 							<reference ref="883618387"/>
 						</object>
-						<reference key="parent" ref="215659978"/>
+						<reference key="bp" ref="215659978"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">498</int>
 						<reference key="object" ref="875092757"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">499</int>
 						<reference key="object" ref="630155264"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">500</int>
 						<reference key="object" ref="945678886"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">501</int>
 						<reference key="object" ref="512868991"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">502</int>
 						<reference key="object" ref="163117631"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">503</int>
@@ -3356,27 +3356,27 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="956096989"/>
 						</object>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">504</int>
 						<reference key="object" ref="908105787"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">505</int>
 						<reference key="object" ref="644046920"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">506</int>
 						<reference key="object" ref="231811626"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">507</int>
 						<reference key="object" ref="883618387"/>
-						<reference key="parent" ref="446991534"/>
+						<reference key="bp" ref="446991534"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">508</int>
@@ -3393,52 +3393,52 @@
 							<reference ref="825984362"/>
 							<reference ref="560145579"/>
 						</object>
-						<reference key="parent" ref="31516759"/>
+						<reference key="bp" ref="31516759"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">509</int>
 						<reference key="object" ref="257099033"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">510</int>
 						<reference key="object" ref="551969625"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">511</int>
 						<reference key="object" ref="249532473"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">512</int>
 						<reference key="object" ref="607364498"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">513</int>
 						<reference key="object" ref="508151438"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">514</int>
 						<reference key="object" ref="981751889"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">515</int>
 						<reference key="object" ref="380031999"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">516</int>
 						<reference key="object" ref="825984362"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">517</int>
 						<reference key="object" ref="560145579"/>
-						<reference key="parent" ref="956096989"/>
+						<reference key="bp" ref="956096989"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">533</int>
@@ -3447,7 +3447,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="939854878"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 						<string key="objectName">Color</string>
 					</object>
 					<object class="IBObjectRecord">
@@ -3457,7 +3457,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="526523505"/>
 						</object>
-						<reference key="parent" ref="895645105"/>
+						<reference key="bp" ref="895645105"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">535</int>
@@ -3468,24 +3468,24 @@
 							<reference ref="468569656"/>
 							<reference ref="461530193"/>
 						</object>
-						<reference key="parent" ref="939854878"/>
+						<reference key="bp" ref="939854878"/>
 						<string key="objectName">Menu - Color</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">536</int>
 						<reference key="object" ref="969578911"/>
-						<reference key="parent" ref="526523505"/>
+						<reference key="bp" ref="526523505"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">537</int>
 						<reference key="object" ref="468569656"/>
-						<reference key="parent" ref="526523505"/>
+						<reference key="bp" ref="526523505"/>
 						<string key="objectName">Menu Item - Red</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">538</int>
 						<reference key="object" ref="461530193"/>
-						<reference key="parent" ref="526523505"/>
+						<reference key="bp" ref="526523505"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">541</int>
@@ -3494,13 +3494,13 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="934915496"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 						<string key="objectName">Visible</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">542</int>
 						<reference key="object" ref="934915496"/>
-						<reference key="parent" ref="336088134"/>
+						<reference key="bp" ref="336088134"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">545</int>
@@ -3509,12 +3509,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="67668546"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">546</int>
 						<reference key="object" ref="67668546"/>
-						<reference key="parent" ref="886444468"/>
+						<reference key="bp" ref="886444468"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">539</int>
@@ -3523,13 +3523,13 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="171036244"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 						<string key="objectName">Rotation</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">540</int>
 						<reference key="object" ref="171036244"/>
-						<reference key="parent" ref="186246764"/>
+						<reference key="bp" ref="186246764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">543</int>
@@ -3538,12 +3538,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="575979405"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">544</int>
 						<reference key="object" ref="575979405"/>
-						<reference key="parent" ref="482000415"/>
+						<reference key="bp" ref="482000415"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">552</int>
@@ -3552,18 +3552,18 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="1043401668"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 						<string key="objectName">Text</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">553</int>
 						<reference key="object" ref="1043401668"/>
-						<reference key="parent" ref="969295846"/>
+						<reference key="bp" ref="969295846"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">554</int>
 						<reference key="object" ref="301002623"/>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 						<string key="objectName">SFML view</string>
 					</object>
 					<object class="IBObjectRecord">
@@ -3573,12 +3573,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="1053978795"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">565</int>
 						<reference key="object" ref="1053978795"/>
-						<reference key="parent" ref="531630843"/>
+						<reference key="bp" ref="531630843"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">568</int>
@@ -3587,12 +3587,12 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="702743979"/>
 						</object>
-						<reference key="parent" ref="439893737"/>
+						<reference key="bp" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">569</int>
 						<reference key="object" ref="702743979"/>
-						<reference key="parent" ref="422780221"/>
+						<reference key="bp" ref="422780221"/>
 					</object>
 				</object>
 			</object>

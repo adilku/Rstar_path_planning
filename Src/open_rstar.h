@@ -14,6 +14,7 @@
 #include "gl_const.h"
 
 
+
 class open_rstar {
 public:
 
@@ -27,13 +28,9 @@ public:
             breakingties = br;
         }
 
-        bool operator()(const Node_rstar &lhs,
-                        const Node_rstar &rhs) const {
-            if (breakingties == CN_SP_BT_GMIN || 1) {
-                return std::tuple(lhs.avoid, lhs.F, lhs.g, lhs.i, lhs.j) < std::tuple(lhs.avoid, rhs.F, rhs.g, rhs.i, rhs.j);
-            } else {
-                return std::tuple(lhs.avoid, lhs.F, rhs.g, lhs.i, lhs.j) < std::tuple(lhs.avoid, rhs.F, lhs.g, rhs.i, rhs.j);
-            }
+        bool operator()(const NodeRstar &lhs,
+                        const NodeRstar &rhs) const {
+            return std::tie(lhs.avoid, lhs.F, lhs.i, lhs.j) < std::tie(rhs.avoid, rhs.F, rhs.i, rhs.j);
         }
     };
 
@@ -43,18 +40,20 @@ public:
         }
     };
 
-    std::unordered_map<std::pair<int, int>, std::set<Node_rstar>::iterator, hash_pair> open_map;
+    std::unordered_map<std::pair<int, int>, std::set<NodeRstar>::iterator, hash_pair> open_map;
 
-    std::set<Node_rstar, compare> open_heap;
+    std::set<NodeRstar, compare> open_heap;
 
-    Node_rstar check_min();
+    NodeRstar check_min();
 
-    Node_rstar get_min();
+    NodeRstar get_min();
 
-    void insert(const Node_rstar &new_node);
+    bool empty();
+
+    void insert(const NodeRstar &new_node);
 
     void erase(const std::unordered_map<std::pair<int, int>,
-            std::set<Node_rstar>::iterator,
+            std::set<NodeRstar>::iterator,
             open_rstar::hash_pair>::iterator &it);
 
 };

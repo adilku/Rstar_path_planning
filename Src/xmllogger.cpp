@@ -88,7 +88,7 @@ void XmlLogger::saveLog()
     doc.SaveFile(LogFileName.c_str());
 }
 
-void XmlLogger::writeToLogMap(const Map &map, const std::list<Node_rstar> &path)
+void XmlLogger::writeToLogMap(const Map &map, const std::list<NodeRstar> &path)
 {
     if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD)
         return;
@@ -105,7 +105,7 @@ void XmlLogger::writeToLogMap(const Map &map, const std::list<Node_rstar> &path)
 
         for (int j = 0; j < map.getMapWidth(); ++j) {
             inPath = false;
-            for(std::list<Node_rstar>::const_iterator it = path.begin(); it != path.end(); it++)
+            for(std::list<NodeRstar>::const_iterator it = path.begin(); it != path.end(); it++)
                 if(it->i == i && it->j == j) {
                     inPath = true;
                     break;
@@ -133,7 +133,7 @@ void XmlLogger::writeToLogMap(const Map &map, const std::list<Node_rstar> &path)
 
 }*/
 
-void XmlLogger::writeToLogPath(const std::list<Node_rstar> &path)
+void XmlLogger::writeToLogPath(const std::list<NodeRstar> &path)
 {
     if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD || path.empty())
         return;
@@ -141,7 +141,7 @@ void XmlLogger::writeToLogPath(const std::list<Node_rstar> &path)
     XMLElement *lplevel = doc.FirstChildElement(CNS_TAG_ROOT);
     lplevel = lplevel->FirstChildElement(CNS_TAG_LOG)->FirstChildElement(CNS_TAG_LPLEVEL);
 
-    for (std::list<Node_rstar>::const_iterator it = path.begin(); it != path.end(); it++) {
+    for (std::list<NodeRstar>::const_iterator it = path.begin(); it != path.end(); it++) {
         XMLElement *element = doc.NewElement(CNS_TAG_POINT);
         element->SetAttribute(CNS_TAG_ATTR_X, it->j);
         element->SetAttribute(CNS_TAG_ATTR_Y, it->i);
@@ -151,15 +151,15 @@ void XmlLogger::writeToLogPath(const std::list<Node_rstar> &path)
     }
 }
 
-void XmlLogger::writeToLogHPpath(const std::list<Node_rstar> &hppath)
+void XmlLogger::writeToLogHPpath(const std::list<NodeRstar> &hppath)
 {
     if (loglevel == CN_LP_LEVEL_NOPE_WORD || loglevel == CN_LP_LEVEL_TINY_WORD || hppath.empty())
         return;
     int partnumber = 0;
     XMLElement *hplevel = doc.FirstChildElement(CNS_TAG_ROOT);
     hplevel = hplevel->FirstChildElement(CNS_TAG_LOG)->FirstChildElement(CNS_TAG_HPLEVEL);
-    std::list<Node_rstar>::const_iterator iter = hppath.begin();
-    std::list<Node_rstar>::const_iterator it = hppath.begin();
+    std::list<NodeRstar>::const_iterator iter = hppath.begin();
+    std::list<NodeRstar>::const_iterator it = hppath.begin();
 
     while (iter != --hppath.end()) {
         XMLElement *part = doc.NewElement(CNS_TAG_SECTION);

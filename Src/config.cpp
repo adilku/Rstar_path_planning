@@ -62,7 +62,7 @@ bool Config::getConfig(const char *FileName)
         SearchParams[CN_SP_ST] = CN_SP_ST_DIJK;
     }
     else if (value == CNS_SP_ST_ASTAR || value == CNS_SP_ST_JP_SEARCH || value == CNS_SP_ST_TH) {
-        N = 7;
+        N = 9;
         SearchParams = new double[N];
         SearchParams[CN_SP_ST] = CN_SP_ST_ASTAR;
         if (value == CNS_SP_ST_JP_SEARCH)
@@ -131,6 +131,67 @@ bool Config::getConfig(const char *FileName)
                 SearchParams[CN_SP_BT] = CN_SP_BT_GMAX;
             }
         }
+
+        element = algorithm->FirstChildElement(CNS_TAG_NS);
+        if (!element) {
+            std::cout << "Warning! No '" << CNS_TAG_NS << "' tag found in algorithm section." << std::endl;
+            std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
+            SearchParams[CN_SP_NS] = 1;
+        }
+        else {
+            stream << element->GetText();
+            stream >> SearchParams[CN_SP_NS];
+            stream.str("");
+            stream.clear();
+
+            if (SearchParams[CN_SP_NS] < 1) {
+                std::cout << "Warning! Value of '" << CNS_TAG_NS << "' tag is not correctly specified. Should be >= 1."
+                          << std::endl;
+                std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
+                SearchParams[CN_SP_NS] = 1;
+            }
+        }
+
+        element = algorithm->FirstChildElement(CNS_TAG_NS);
+        if (!element) {
+            std::cout << "Warning! No '" << CNS_TAG_NS << "' tag found in algorithm section." << std::endl;
+            std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
+            SearchParams[CN_SP_NS] = 1;
+        }
+        else {
+            stream << element->GetText();
+            stream >> SearchParams[CN_SP_NS];
+            stream.str("");
+            stream.clear();
+
+            if (SearchParams[CN_SP_NS] < 1) {
+                std::cout << "Warning! Value of '" << CNS_TAG_NS << "' tag is not correctly specified. Should be >= 1."
+                          << std::endl;
+                std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
+                SearchParams[CN_SP_NS] = 4;
+            }
+        }
+
+        element = algorithm->FirstChildElement(CNS_TAG_SR);
+        if (!element) {
+            std::cout << "Warning! No '" << CNS_TAG_SR << "' tag found in algorithm section." << std::endl;
+            std::cout << "Value of '" << CNS_TAG_SR << "' was defined to 1." << std::endl;
+            SearchParams[CN_SP_SR] = 1;
+        }
+        else {
+            stream << element->GetText();
+            stream >> SearchParams[CN_SP_NS];
+            stream.str("");
+            stream.clear();
+
+            if (SearchParams[CN_SP_NS] < 1) {
+                std::cout << "Warning! Value of '" << CNS_TAG_NS << "' tag is not correctly specified. Should be >= 1."
+                          << std::endl;
+                std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
+                SearchParams[CN_SP_NS] = 1;
+            }
+        }
+
     }
     else {
         std::cout << "Error! Value of '" << CNS_TAG_ST << "' tag (algorithm name) is not correctly specified."

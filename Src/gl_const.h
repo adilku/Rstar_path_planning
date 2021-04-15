@@ -21,6 +21,8 @@
 
 #define CNS_TAG_ALG             "algorithm"
 #define CNS_TAG_ST          "searchtype"
+#define CNS_TAG_NS          "numberofstates"
+#define CNS_TAG_SR          "radius"
 #define CNS_TAG_HW          "hweight"
 #define CNS_TAG_MT          "metrictype"
 #define CNS_TAG_BT          "breakingties"
@@ -102,6 +104,10 @@
 
 #define CN_SP_BT 6 //BreakingTies
 
+#define CN_SP_NS 7 // NumberOfStates
+
+#define CN_SP_SR 8 // Radius
+
 #define CNS_SP_BT_GMIN "g-min"
 #define CNS_SP_BT_GMAX "g-max"
 
@@ -141,7 +147,7 @@
 #define DISALLOWED_DIAG_MOVES std::vector<std::pair<int, int>>{{-1, 0}, {1, 0}, {0, 1}, {0, -1}}
 #define ALLOWED_DIAG_MOVES std::vector<std::pair<int, int>>{{1, 1}, {1, -1}, {-1, 1}, {-1, -1}}
 
-#define CNT_RND_DOTS 5
+#define CNT_RND_DOTS 3
 
 #endif
 

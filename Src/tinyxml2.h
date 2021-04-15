@@ -621,7 +621,7 @@ private:
 
 /** XMLNode is a base class for every object that is in the
 	XML Document Object Model (DOM), except XMLAttributes.
-	Nodes have siblings, a parent, and children which can
+	Nodes have siblings, a bp, and children which can
 	be navigated. A node is always in a XMLDocument.
 	The type of a XMLNode can be queried, and it can
 	be cast to its more defined type.
@@ -724,7 +724,7 @@ public:
     /// Gets the line number the node is in, if the document was parsed from a file.
     int GetLineNum() const { return _parseLineNum; }
 
-    /// Get the parent of this node on the DOM.
+    /// Get the bp of this node on the DOM.
     const XMLNode*	Parent() const			{
         return _parent;
     }
