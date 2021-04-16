@@ -30,7 +30,7 @@ public:
 
         bool operator()(const NodeRstar &lhs,
                         const NodeRstar &rhs) const {
-            return std::tie(lhs.avoid, lhs.F, lhs.i, lhs.j) < std::tie(rhs.avoid, rhs.F, rhs.i, rhs.j);
+            return std::tie(lhs.avoid, lhs.F, lhs.g, lhs.i, lhs.j) < std::tie(rhs.avoid, rhs.F, rhs.g, rhs.i, rhs.j);
         }
     };
 
@@ -48,7 +48,7 @@ public:
 
     NodeRstar get_min();
 
-    bool empty();
+    bool empty() const;
 
     void insert(const NodeRstar &new_node);
 

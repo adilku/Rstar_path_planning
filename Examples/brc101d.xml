@@ -650,9 +650,11 @@
   </map>
   <algorithm>
     <searchtype>astar</searchtype>
-    <metrictype>diagonal</metrictype>
+    <metrictype>manhattan</metrictype>
     <breakingties>g-max</breakingties>
     <hweight>1</hweight>
+    <numberofstates>15</numberofstates>
+    <radius>60</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>
     <allowsqueeze>true</allowsqueeze>

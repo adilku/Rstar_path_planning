@@ -14,6 +14,7 @@ public:
     double  hweight;
     int breakingties;
     int numberofstates;  // Number of states generated on current iteration
+    int radius;  // Distance at which points will be generated
 };
 
 #endif // ENVIRONMENTOPTIONS_H

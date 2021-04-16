@@ -39,7 +39,7 @@ protected:
     };
 
 
-    static std::vector<std::pair<int, int>> get_dots(int x, int y, int delta, const EnvironmentOptions &options);
+    static std::vector<std::pair<int, int>> get_dots(int x, int y, const EnvironmentOptions &options);
     SearchResult_rstar sresult; //This will store the search result
     std::list<NodeRstar> lppath, hppath; //
     std::unordered_map<std::pair<int, int>, NodeRstar, hash_pair> close_map;
@@ -53,9 +53,9 @@ protected:
 
     void makeSecondaryPath();
 
-    void updateState(NodeRstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
+    void updateState(NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 
-    void ReevaluteState(ILogger * Logger, NodeRstar state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
+    void ReevaluteState(ILogger * Logger, NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 };
 
 

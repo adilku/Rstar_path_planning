@@ -25,18 +25,12 @@ void open_rstar::erase(
 
 
 void open_rstar::insert(const NodeRstar &new_node) {
-    int heap_size = open_heap.size();
-    int map_size = open_map.size();
-
     auto temp = open_heap.insert(new_node);
     open_map.insert({{new_node.i, new_node.j}, temp.first});
-    if (open_map.size() != open_heap.size()) {
-        std::cout << "\npizdec" << new_node.i << ' ' << new_node.j << '\n';
-    }
 }
 
 open_rstar::open_rstar(int breakingties_) : open_heap(compare(breakingties_)) {}
 
-bool open_rstar::empty() {
+bool open_rstar::empty() const {
     return open_heap.empty();
 }

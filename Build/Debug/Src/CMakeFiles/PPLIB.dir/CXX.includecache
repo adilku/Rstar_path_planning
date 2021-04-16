@@ -167,6 +167,10 @@ list
 -
 vector
 -
+iostream
+-
+memory
+-
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_container.cpp
 open_container.h
@@ -187,6 +191,8 @@ gl_const.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.cpp
 open_rstar.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
+iostream
+-
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
 unordered_map
@@ -281,6 +287,8 @@ random
 -
 draw_path.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.h
+open_rstar.h
+/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/searchresult.h
 list

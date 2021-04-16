@@ -37,7 +37,8 @@ protected:
 
     double get_heuristic(Point from, Point to, const EnvironmentOptions &options) const;
 
-    void checkNeighbours(Node &v, const Map &map, const EnvironmentOptions &options, std::vector<Node> &neighbours);
+    void checkNeighbours(Node &v, const Map &map, const EnvironmentOptions &options, std::vector<Node> &neighbours,
+                         Point start_, Point finish_);
 
     void makePrimaryPath(Node *curNode);
 

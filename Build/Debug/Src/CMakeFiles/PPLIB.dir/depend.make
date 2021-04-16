@@ -15,6 +15,7 @@ Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/ilogger.h
 Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/map.h
 Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/node.h
 Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/node_rstar.h
+Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/open_rstar.h
 Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/search.h
 Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/search_rstar.h
 Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/searchresult.h
@@ -41,6 +42,7 @@ Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/mission.cpp
 Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/mission.h
 Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/node.h
 Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/node_rstar.h
+Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/open_rstar.h
 Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/search.h
 Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/search_rstar.h
 Src/CMakeFiles/PPLIB.dir/mission.cpp.o: ../../Src/searchresult.h

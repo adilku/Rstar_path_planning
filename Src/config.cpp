@@ -167,7 +167,7 @@ bool Config::getConfig(const char *FileName)
             if (SearchParams[CN_SP_NS] < 1) {
                 std::cout << "Warning! Value of '" << CNS_TAG_NS << "' tag is not correctly specified. Should be >= 1."
                           << std::endl;
-                std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
+                std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 4." << std::endl;
                 SearchParams[CN_SP_NS] = 4;
             }
         }
@@ -175,23 +175,22 @@ bool Config::getConfig(const char *FileName)
         element = algorithm->FirstChildElement(CNS_TAG_SR);
         if (!element) {
             std::cout << "Warning! No '" << CNS_TAG_SR << "' tag found in algorithm section." << std::endl;
-            std::cout << "Value of '" << CNS_TAG_SR << "' was defined to 1." << std::endl;
-            SearchParams[CN_SP_SR] = 1;
+            std::cout << "Value of '" << CNS_TAG_SR << "' was defined to 2." << std::endl;
+            SearchParams[CN_SP_SR] = 2;
         }
         else {
             stream << element->GetText();
-            stream >> SearchParams[CN_SP_NS];
+            stream >> SearchParams[CN_SP_SR];
             stream.str("");
             stream.clear();
 
-            if (SearchParams[CN_SP_NS] < 1) {
-                std::cout << "Warning! Value of '" << CNS_TAG_NS << "' tag is not correctly specified. Should be >= 1."
+            if (SearchParams[CN_SP_SR] < 1) {
+                std::cout << "Warning! Value of '" << CNS_TAG_SR << "' tag is not correctly specified. Should be >= 1."
                           << std::endl;
-                std::cout << "Value of '" << CNS_TAG_NS << "' was defined to 1." << std::endl;
-                SearchParams[CN_SP_NS] = 1;
+                std::cout << "Value of '" << CNS_TAG_SR << "' was defined to 2." << std::endl;
+                SearchParams[CN_SP_NS] = 2;
             }
         }
-
     }
     else {
         std::cout << "Error! Value of '" << CNS_TAG_ST << "' tag (algorithm name) is not correctly specified."

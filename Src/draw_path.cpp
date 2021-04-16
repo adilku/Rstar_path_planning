@@ -46,8 +46,8 @@ void sfml_draw::draw_obstacles(sf::RenderWindow& window, const Map& map) {
     }
 }
 
-void sfml_draw::draw_path(sf::RenderWindow& window, sf::Event event, const SearchResult_rstar &result) {
-    for (auto &node_cur : *result.lppath) {
+void sfml_draw::draw_path( sf::RenderWindow& window, sf::Event event, const std::list<NodeRstar> &lppath) {
+    for (auto &node_cur : lppath) {
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
@@ -55,7 +55,7 @@ void sfml_draw::draw_path(sf::RenderWindow& window, sf::Event event, const Searc
         //std::cout << node_cur.j << ' ' << node_cur.i << '\n';
         if (window.isOpen()) {
             sf::RectangleShape quad(sf::Vector2f(sizeOfRect, sizeOfRect));
-            quad.setFillColor(sf::Color::Yellow);
+            quad.setFillColor(sf::Color::Blue);
             quad.setPosition((double) node_cur.j * sizeOfRect, (float) node_cur.i * sizeOfRect);
             window.draw(quad);
             window.display();
@@ -64,10 +64,10 @@ void sfml_draw::draw_path(sf::RenderWindow& window, sf::Event event, const Searc
     }
 }
 
-void sfml_draw::draw_local_path(sf::RenderWindow& window, sf::Event event, std::shared_ptr<std::list<Node>> lppath) {
+void sfml_draw::draw_local_path( sf::RenderWindow& window, sf::Event event,const std::shared_ptr<std::list<Node>>& lppath) {
     //std::cout << "debug in draw_local_path" << result.lppath->size();
     for (auto &node_cur : *lppath) {
-        //std::cout << "debug in draw_path dots" << '\n';
+            //std::cout << "debug in draw_path dots" << '\n';
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
@@ -78,10 +78,10 @@ void sfml_draw::draw_local_path(sf::RenderWindow& window, sf::Event event, std::
             quad.setFillColor(sf::Color::Yellow);
             quad.setPosition((double) node_cur.j * sizeOfRect, (float) node_cur.i * sizeOfRect);
             window.draw(quad);
-            window.display();
-            sf::sleep(sf::milliseconds(10));
+            //sf::sleep(sf::milliseconds(10));
         }
     }
+    window.display();
 }
 
 
@@ -94,8 +94,10 @@ void sfml_draw::draw_point(sf::RenderWindow &window, sf::Event event, int i, int
         sf::RectangleShape quad(sf::Vector2f(sizeOfRect, sizeOfRect));
         if (color == 1) {
             quad.setFillColor(sf::Color::Blue);
-        } else {
+        } else if (color == 2) {
             quad.setFillColor(sf::Color::Red);
+        } else if (color == 3) {
+            quad.setFillColor(sf::Color::Green);
         }
 
         quad.setPosition((double) j * sizeOfRect, (float) i * sizeOfRect);

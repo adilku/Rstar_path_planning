@@ -27,7 +27,8 @@ double Search::get_heuristic(Point from, Point to, const EnvironmentOptions &opt
 
 
 void
-Search::checkNeighbours(Node &v, const Map &map, const EnvironmentOptions &options, std::vector<Node> &neighbours) {
+Search::checkNeighbours(Node &v, const Map &map, const EnvironmentOptions &options, std::vector<Node> &neighbours,
+                        Point start_, Point finish_) {
     double hWeight = options.hweight;
     for (auto &micro_node : DISALLOWED_DIAG_MOVES) {
         int i = micro_node.first;
@@ -35,9 +36,9 @@ Search::checkNeighbours(Node &v, const Map &map, const EnvironmentOptions &optio
         if (map.CellOnGrid(v.i + i, v.j + j) && map.CellIsTraversable(v.i + i, v.j + j)) {
             neighbours.emplace_back(v.i + i, v.j + j,
                                     v.g + CN_CELL_SIZE +
-                                    hWeight * get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options),
+                                    hWeight * get_heuristic({v.i + i, v.j + j}, finish_, options),
                                     v.g + CN_CELL_SIZE,
-                                    get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options), &v);
+                                    get_heuristic({v.i + i, v.j + j}, finish_, options), &v);
         }
     }
     if (options.allowdiagonal) {
@@ -56,10 +57,10 @@ Search::checkNeighbours(Node &v, const Map &map, const EnvironmentOptions &optio
                         neighbours.emplace_back(v.i + i, v.j + j,
                                                 v.g + CN_SQRT_TWO +
                                                 hWeight *
-                                                get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(),
+                                                get_heuristic({v.i + i, v.j + j}, finish_,
                                                               options),
                                                 v.g + CN_SQRT_TWO,
-                                                get_heuristic({v.i + i, v.j + j}, map.getCoordinatesGoal(), options),
+                                                get_heuristic({v.i + i, v.j + j}, finish_, options),
                                                 &v);
                     }
                 }
@@ -102,7 +103,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
             break;
         }
         std::vector<Node> neighbours;
-        checkNeighbours(*cur_v, map, options, neighbours);
+        checkNeighbours(*cur_v, map, options, neighbours, start_, finish_);
         for (auto &neighbour : neighbours) {
             if (close_map[{neighbour.i, neighbour.j}].i == -1) {
                 auto it = open.open_map.find({neighbour.i, neighbour.j});
@@ -117,6 +118,7 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
             }
         }
     }
+
     sresult.pathfound = (searchedGoal != nullptr);
     if (searchedGoal != nullptr) {
         sresult.pathlength = searchedGoal->g;

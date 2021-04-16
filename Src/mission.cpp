@@ -45,6 +45,7 @@ void Mission::createEnvironmentOptions()
     options.hweight = config.SearchParams[CN_SP_HW];
     options.breakingties = config.SearchParams[CN_SP_BT];
     options.numberofstates = config.SearchParams[CN_SP_NS];
+    options.radius = config.SearchParams[CN_SP_SR];
 }
 
 void Mission::createSearch()

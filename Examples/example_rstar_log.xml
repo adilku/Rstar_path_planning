@@ -62,7 +62,9 @@
         <searchtype>astar</searchtype>
         <metrictype>manhattan</metrictype>
         <breakingties>g-max</breakingties>
-        <hweight>1</hweight>
+        <hweight>2</hweight>
+        <numberofstates>4</numberofstates>
+        <radius>4</radius>
         <allowdiagonal>true</allowdiagonal>
         <cutcorners>true</cutcorners>
         <allowsqueeze>true</allowsqueeze>
@@ -74,9 +76,96 @@
     </options>
     <log>
         <mapfilename>/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Examples/example_rstar.xml</mapfilename>
-        <summary numberofsteps="0" nodescreated="0" length="0" length_scaled="0" time="0.000000"/>
-        <path>Path NOT found!</path>
-        <lplevel/>
-        <hplevel/>
+        <summary numberofsteps="155" nodescreated="305" length="0" length_scaled="0" time="0.006761"/>
+        <path>
+            <row number="0">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </row>
+            <row number="1">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="2">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="3">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="4">1 0 0 0 * 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="5">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="6">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="7">1 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="8">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="9">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="10">1 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="11">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="12">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="13">1 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="14">1 0 0 0 0 0 0 0 0 0 0 0 * 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="15">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="16">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 * 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="17">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="18">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="19">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 * 0 0 * 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="20">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="21">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="22">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="23">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="24">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 * 0 * 0 0 0 0 0 0 1 </row>
+            <row number="25">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="26">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="27">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="28">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="29">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="30">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="31">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="32">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="33">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="34">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="35">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="36">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="37">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="38">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="39">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="40">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="41">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="42">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="43">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="44">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="45">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="46">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="47">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 1 1 1 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="48">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </row>
+        </path>
+        <lplevel>
+            <node x="4" y="4" number="0"/>
+            <node x="7" y="4" number="1"/>
+            <node x="8" y="7" number="2"/>
+            <node x="9" y="10" number="3"/>
+            <node x="9" y="13" number="4"/>
+            <node x="12" y="14" number="5"/>
+            <node x="15" y="14" number="6"/>
+            <node x="18" y="13" number="7"/>
+            <node x="20" y="16" number="8"/>
+            <node x="22" y="19" number="9"/>
+            <node x="25" y="19" number="10"/>
+            <node x="28" y="19" number="11"/>
+            <node x="31" y="19" number="12"/>
+            <node x="31" y="22" number="13"/>
+            <node x="34" y="22" number="14"/>
+            <node x="36" y="24" number="15"/>
+            <node x="39" y="24" number="16"/>
+            <node x="41" y="24" number="17"/>
+        </lplevel>
+        <hplevel>
+            <section number="0" staztz.x="4" start.y="4" finish.x="7" finish.y="4" length="3"/>
+            <section number="1" staztz.x="7" start.y="4" finish.x="8" finish.y="7" length="3.4142136573791504"/>
+            <section number="2" staztz.x="8" start.y="7" finish.x="9" finish.y="10" length="3.4142136573791504"/>
+            <section number="3" staztz.x="9" start.y="10" finish.x="9" finish.y="13" length="3"/>
+            <section number="4" staztz.x="9" start.y="13" finish.x="12" finish.y="14" length="3.4142136573791504"/>
+            <section number="5" staztz.x="12" start.y="14" finish.x="15" finish.y="14" length="3"/>
+            <section number="6" staztz.x="15" start.y="14" finish.x="18" finish.y="13" length="3.4142136573791504"/>
+            <section number="7" staztz.x="18" start.y="13" finish.x="20" finish.y="16" length="3.8284270763397217"/>
+            <section number="8" staztz.x="20" start.y="16" finish.x="22" finish.y="19" length="3.8284270763397217"/>
+            <section number="9" staztz.x="22" start.y="19" finish.x="25" finish.y="19" length="3"/>
+            <section number="10" staztz.x="25" start.y="19" finish.x="28" finish.y="19" length="3"/>
+            <section number="11" staztz.x="28" start.y="19" finish.x="31" finish.y="19" length="3"/>
+            <section number="12" staztz.x="31" start.y="19" finish.x="31" finish.y="22" length="3"/>
+            <section number="13" staztz.x="31" start.y="22" finish.x="34" finish.y="22" length="3"/>
+            <section number="14" staztz.x="34" start.y="22" finish.x="36" finish.y="24" length="2.8284270763397217"/>
+            <section number="15" staztz.x="36" start.y="24" finish.x="39" finish.y="24" length="3"/>
+            <section number="16" staztz.x="39" start.y="24" finish.x="41" finish.y="24" length="2"/>
+        </hplevel>
     </log>
 </root>

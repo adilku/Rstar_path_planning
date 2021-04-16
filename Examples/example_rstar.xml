@@ -62,8 +62,9 @@
     <searchtype>astar</searchtype>
     <metrictype>manhattan</metrictype>
     <breakingties>g-max</breakingties>
-    <hweight>1</hweight>
+    <hweight>2</hweight>
     <numberofstates>4</numberofstates>
+    <radius>4</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>
     <allowsqueeze>true</allowsqueeze>
