@@ -1,4 +1,4 @@
-# PathPlanningProject
+# R* Alogrithm
 
 ## Параметры входного файла
 
