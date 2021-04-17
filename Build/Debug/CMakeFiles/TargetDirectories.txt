@@ -13,7 +13,7 @@
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src/CMakeFiles/edit_cache.dir
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src/CMakeFiles/install/strip.dir
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src/CMakeFiles/install.dir
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir
+/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src/CMakeFiles/RstarSearch.dir
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Tests/CMakeFiles/install/strip.dir
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Tests/CMakeFiles/install.dir
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Tests/CMakeFiles/list_install_components.dir

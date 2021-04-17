@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o"
   "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/map.cpp.o"
   "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o"
+  "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o"
   "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_container.cpp.o"
   "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_rstar.cpp.o"
   "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/search.cpp.o"

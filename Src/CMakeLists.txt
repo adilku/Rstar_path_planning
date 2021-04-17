@@ -13,7 +13,8 @@ set(HEADERS         config.h
                     open_container.h
                     search_rstar.h
                     draw_path.h
-                    open_rstar.h)
+                    open_rstar.h
+                    node_rstar.h)
 
 set(SOURCES         config.cpp
                     environmentoptions.cpp
@@ -25,12 +26,12 @@ set(SOURCES         config.cpp
                     open_container.cpp
                     search_rstar.cpp
                     draw_path.cpp
-                    open_rstar.cpp)
+                    open_rstar.cpp
+                    node_rstar.cpp)
 
 
 set(SFML_DIR "${PROJECT_SOURCE_DIR}/src/SFML-master/lib/cmake/SFML")
 find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
-
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
 

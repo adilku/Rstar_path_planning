@@ -8,7 +8,8 @@
 * `startx` и `starty` &mdash; координаты начала
 * `finishx` и `finishy` &mdash; координаты конца
 * `grid` &mdash; сама карта
-
+* `numberofstates` &mdash; количество вершин сгенерированных на каждой итерации алгоритма
+* `radius` &mdash; расстояние на котором будут генерироваться случайные вершины
 
 Для смены параметров поиска пути нужно использовать следующие параметры входного файла:
 
@@ -120,6 +121,16 @@ cd PathPlanningProject
 cd Build
 cd Debug
 cmake ../../ -DCMAKE_BUILD_TYPE="Debug"
+make
+make install
+```
+
+Сборка с визуализацией:
+```
+cd PathPlanningProject
+cd Build
+cd Debug
+cmake ../../ -DVISUAL_MODE -DCMAKE_BUILD_TYPE="Debug/Release"
 make
 make install
 ```

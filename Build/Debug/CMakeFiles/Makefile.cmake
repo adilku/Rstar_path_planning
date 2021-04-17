@@ -62,6 +62,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "Src/CMakeFiles/PPLIB.dir/DependInfo.cmake"
-  "Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/DependInfo.cmake"
+  "Src/CMakeFiles/RstarSearch.dir/DependInfo.cmake"
   "Tests/CMakeFiles/testbench.dir/DependInfo.cmake"
   )

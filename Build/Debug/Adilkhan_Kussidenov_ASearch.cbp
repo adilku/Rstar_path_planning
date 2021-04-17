@@ -271,6 +271,14 @@
 			<Option target="PPLIB"/>
 			<Option target="Adilkhan_Kussidenov_ASearch"/>
 		</Unit>
+		<Unit filename="/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp">
+			<Option target="PPLIB"/>
+			<Option target="Adilkhan_Kussidenov_ASearch"/>
+		</Unit>
+		<Unit filename="/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h">
+			<Option target="PPLIB"/>
+			<Option target="Adilkhan_Kussidenov_ASearch"/>
+		</Unit>
 		<Unit filename="/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_container.cpp">
 			<Option target="PPLIB"/>
 			<Option target="Adilkhan_Kussidenov_ASearch"/>

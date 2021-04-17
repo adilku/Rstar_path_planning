@@ -288,6 +288,10 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: /usr/local/include
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o: ../../Src/node.h
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o: ../../Src/node_rstar.cpp
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o: ../../Src/node_rstar.h
+
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_container.cpp.o: ../../Src/gl_const.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_container.cpp.o: ../../Src/node.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_container.cpp.o: ../../Src/open_container.cpp

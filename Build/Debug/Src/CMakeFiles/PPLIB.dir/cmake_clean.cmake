@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/PPLIB.dir/environmentoptions.cpp.o"
   "CMakeFiles/PPLIB.dir/map.cpp.o"
   "CMakeFiles/PPLIB.dir/mission.cpp.o"
+  "CMakeFiles/PPLIB.dir/node_rstar.cpp.o"
   "CMakeFiles/PPLIB.dir/open_container.cpp.o"
   "CMakeFiles/PPLIB.dir/open_rstar.cpp.o"
   "CMakeFiles/PPLIB.dir/search.cpp.o"

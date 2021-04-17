@@ -39,15 +39,14 @@ protected:
     };
 
 
-    static std::vector<std::pair<int, int>> get_dots(int x, int y, const EnvironmentOptions &options);
+
     SearchResult_rstar sresult; //This will store the search result
     std::list<NodeRstar> lppath, hppath; //
     std::unordered_map<std::pair<int, int>, NodeRstar, hash_pair> close_map;
 
-    double get_heuristic(Point from, Point to, const EnvironmentOptions &options) const;
+    static double get_heuristic(Point from, Point to, const EnvironmentOptions &options);
 
-
-    void CheckRandomNeighbours(NodeRstar &v, const Map &map, const EnvironmentOptions &options, std::vector<std::pair<int, int>> &neighbours);
+    static void CheckRandomNeighbours(NodeRstar &v, const Map &map, const EnvironmentOptions &options, std::vector<std::pair<int, int>> &neighbours);
 
     void makePrimaryPath(std::shared_ptr<NodeRstar> curNode);
 

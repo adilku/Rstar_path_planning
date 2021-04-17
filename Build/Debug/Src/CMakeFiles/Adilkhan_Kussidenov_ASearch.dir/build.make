@@ -220,9 +220,22 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_rstar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_rstar.cpp.s"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.cpp -o CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_rstar.cpp.s
 
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/flags.make
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o: ../../Src/node_rstar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o"
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o -c /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp
+
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.i"
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp > CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.i
+
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.s"
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp -o CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.s
+
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/flags.make
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o: ../../Src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o -c /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/main.cpp
 
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.i: cmake_force
@@ -246,6 +259,7 @@ Adilkhan_Kussidenov_ASearch_OBJECTS = \
 "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/search_rstar.cpp.o" \
 "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o" \
 "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_rstar.cpp.o" \
+"CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o" \
 "CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o"
 
 # External object files for target Adilkhan_Kussidenov_ASearch
@@ -262,13 +276,14 @@ Adilkhan_Kussidenov_ASearch_EXTERNAL_OBJECTS =
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/search_rstar.cpp.o
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/draw_path.cpp.o
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_rstar.cpp.o
+../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/main.cpp.o
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/build.make
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: /usr/local/lib/libsfml-window.2.5.1.dylib
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: /usr/local/lib/libsfml-system.2.5.1.dylib
 ../../bin/Debug/Adilkhan_Kussidenov_ASearch: Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ../../../bin/Debug/Adilkhan_Kussidenov_ASearch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ../../../bin/Debug/Adilkhan_Kussidenov_ASearch"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug/Src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

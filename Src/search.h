@@ -20,20 +20,24 @@ public:
 
     ~Search(void);
 
-    SearchResult startSearch(ILogger *Logger, const Map &Map, const EnvironmentOptions &options,
-                             Point start_, Point finish_);
-
-protected:
-
     struct hash_pair {
         size_t operator()(const std::pair<int, int> &p) const {
             return 1ll * INT_MAX * p.first + p.second;
         }
     };
 
+    std::unordered_map<std::pair<int, int>, Node, hash_pair> close_map;
+
+    SearchResult startSearch(ILogger *Logger, const Map &Map, const EnvironmentOptions &options,
+                             Point start_, Point finish_);
+
+protected:
+
+
+
     SearchResult sresult; //This will store the search result
     std::list<Node> lppath, hppath; //
-    std::unordered_map<std::pair<int, int>, Node, hash_pair> close_map;
+
 
     double get_heuristic(Point from, Point to, const EnvironmentOptions &options) const;
 

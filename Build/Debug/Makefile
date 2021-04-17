@@ -201,17 +201,17 @@ PPLIB/fast:
 .PHONY : PPLIB/fast
 
 #=============================================================================
-# Target rules for targets named Adilkhan_Kussidenov_ASearch
+# Target rules for targets named RstarSearch
 
 # Build rule for target.
-Adilkhan_Kussidenov_ASearch: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Adilkhan_Kussidenov_ASearch
-.PHONY : Adilkhan_Kussidenov_ASearch
+RstarSearch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RstarSearch
+.PHONY : RstarSearch
 
 # fast build rule for target.
-Adilkhan_Kussidenov_ASearch/fast:
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/build.make Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/build
-.PHONY : Adilkhan_Kussidenov_ASearch/fast
+RstarSearch/fast:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/build
+.PHONY : RstarSearch/fast
 
 #=============================================================================
 # Target rules for targets named testbench
@@ -239,8 +239,8 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... Adilkhan_Kussidenov_ASearch"
 	@echo "... PPLIB"
+	@echo "... RstarSearch"
 	@echo "... testbench"
 .PHONY : help
 

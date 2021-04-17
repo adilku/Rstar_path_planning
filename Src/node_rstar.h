@@ -11,6 +11,7 @@
 #include <iostream> //debug
 #include <memory>
 #include <map>
+#include "node.h"
 
 struct NodeRstar {
 
@@ -21,7 +22,6 @@ struct NodeRstar {
     std::shared_ptr<std::map<double, NodeRstar> > predecessors_nodes; // predecessors_nodes with C_low(path_s'_s)
     std::shared_ptr<std::list<Node>> path_to_bp; // path tp backpointer
     double C_low; // 'edge' to bp
-
 
     NodeRstar() {
         i = -1;

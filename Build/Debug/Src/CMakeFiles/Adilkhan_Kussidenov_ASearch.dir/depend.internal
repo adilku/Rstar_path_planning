@@ -288,6 +288,10 @@ Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/mission.cpp.o
  /usr/local/include/SFML/Window/Window.hpp
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
+Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/node_rstar.cpp.o
+ /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
+ /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp
+ /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
 Src/CMakeFiles/Adilkhan_Kussidenov_ASearch.dir/open_container.cpp.o
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/gl_const.h
  /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
