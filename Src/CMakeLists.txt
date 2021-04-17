@@ -30,7 +30,8 @@ set(SOURCES         config.cpp
                     node_rstar.cpp)
 
 
-set(SFML_DIR "${PROJECT_SOURCE_DIR}/src/SFML-master/lib/cmake/SFML")
+#set(SFML_DIR "${PROJECT_SOURCE_DIR} /src/SFML/lib/cmake/SFML")
+
 find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
