@@ -70,7 +70,11 @@ void sfml_draw::draw_local_path( sf::RenderWindow& window, sf::Event event,const
                 window.close();
         }
         if (window.isOpen()) {
-            sf::RectangleShape quad(sf::Vector2f(sizeOfRect, sizeOfRect));
+            double sizeOfRect_quad = sizeOfRect;
+            if (sizeOfRect_quad < 5) {
+                sizeOfRect_quad *= 2;
+            }
+            sf::RectangleShape quad(sf::Vector2f(sizeOfRect_quad, sizeOfRect_quad));
             quad.setFillColor(sf::Color::Yellow);
             quad.setPosition((double) node_cur.j * sizeOfRect, (float) node_cur.i * sizeOfRect);
             window.draw(quad);
