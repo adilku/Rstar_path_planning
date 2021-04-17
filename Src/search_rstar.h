@@ -6,7 +6,7 @@
 #include "searchresult.h"
 #include "searchresult_rstar.h"
 #include "environmentoptions.h"
-#include "SFML-master/include/SFML/Graphics.hpp"
+#include "SFML/include/SFML/Graphics.hpp"
 #include "search.h"
 #include <list>
 #include <vector>
