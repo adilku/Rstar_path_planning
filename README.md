@@ -62,7 +62,7 @@
 ## Начало работы
 Cоздайте ответвление (fork) этого репозитория в свой GitHub аккаунт. Загрузите содержимое полученного репозитория, либо клонируйте его в нужную вам директорию.
 ```bash
-git clone https://github.com/*account*/PathPlanningProject.git
+git clone https://github.com/adilku/Rstar_path_planning
 ```
 
 ### Сборка и запуск
