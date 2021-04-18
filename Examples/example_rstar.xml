@@ -60,14 +60,15 @@
   </map>
   <algorithm>
     <searchtype>astar</searchtype>
-    <metrictype>manhattan</metrictype>
+    <metrictype>chebyshev</metrictype>
     <breakingties>g-max</breakingties>
-    <hweight>2</hweight>
+    <hweight>3</hweight>
     <numberofstates>4</numberofstates>
-    <radius>4</radius>
+    <radius>7</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>
     <allowsqueeze>true</allowsqueeze>
+
   </algorithm>
   <options>
     <loglevel>1</loglevel>

@@ -32,7 +32,7 @@ set(SOURCES         config.cpp
 
 #set(SFML_DIR "${PROJECT_SOURCE_DIR} /src/SFML/lib/cmake/SFML")
 
-find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
+find_package(SFML 2.5 COMPONENTS graphics REQUIRED CONFIG)
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
 
@@ -40,13 +40,19 @@ target_link_libraries(${PROJECT_NAME} sfml-graphics)
 
 add_library(PPLIB ${HEADERS} ${SOURCES})
 
-install(TARGETS ${PROJECT_NAME}
+install(
+        TARGETS ${PROJECT_NAME}
         CONFIGURATIONS Debug
-        DESTINATION Bin/Debug)
+        DESTINATION Bin/Debug
+        )
 
-install(TARGETS ${PROJECT_NAME}
+install(
+        TARGETS ${PROJECT_NAME}
         CONFIGURATIONS Release
-        DESTINATION Bin/Release)
+        DESTINATION Bin/Release
+        )
+
+
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin/${CMAKE_BUILD_TYPE})
 

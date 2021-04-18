@@ -1,0 +1,195 @@
+Start testing: Apr 18 01:48 MSK
+----------------------------------------------------------
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+1/12 Testing: Test1
+1/12 Test: Test1
+Command: "" "../../../TestData/0_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test1" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test1" end time: Apr 18 01:48 MSK
+"Test1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+2/12 Testing: Test2
+2/12 Test: Test2
+Command: "" "../../../TestData/1_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test2" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test2" end time: Apr 18 01:48 MSK
+"Test2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+3/12 Testing: Test3
+3/12 Test: Test3
+Command: "" "../../../TestData/2_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test3" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test3" end time: Apr 18 01:48 MSK
+"Test3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+4/12 Testing: Test4
+4/12 Test: Test4
+Command: "" "../../../TestData/3_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test4" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test4" end time: Apr 18 01:48 MSK
+"Test4" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+5/12 Testing: Test5
+5/12 Test: Test5
+Command: "" "../../../TestData/4_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test5" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test5" end time: Apr 18 01:48 MSK
+"Test5" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+6/12 Testing: Test6
+6/12 Test: Test6
+Command: "" "../../../TestData/5_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test6" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test6" end time: Apr 18 01:48 MSK
+"Test6" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+7/12 Testing: Test7
+7/12 Test: Test7
+Command: "" "../../../TestData/6_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test7" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test7" end time: Apr 18 01:48 MSK
+"Test7" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+8/12 Testing: Test8
+8/12 Test: Test8
+Command: "" "../../../TestData/7_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test8" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test8" end time: Apr 18 01:48 MSK
+"Test8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+9/12 Testing: Test9
+9/12 Test: Test9
+Command: "" "../../../TestData/8_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test9" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test9" end time: Apr 18 01:48 MSK
+"Test9" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+10/12 Testing: Test10
+10/12 Test: Test10
+Command: "" "../../../TestData/9_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test10" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test10" end time: Apr 18 01:48 MSK
+"Test10" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+11/12 Testing: Test11
+11/12 Test: Test11
+Command: "" "../../../TestData/A_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test11" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test11" end time: Apr 18 01:48 MSK
+"Test11" time elapsed: 00:00:00
+----------------------------------------------------------
+
+Unable to find executable: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests/testbench
+12/12 Testing: Test12
+12/12 Test: Test12
+Command: "" "../../../TestData/B_test.xml"
+Directory: /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Tests
+"Test12" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Test12" end time: Apr 18 01:48 MSK
+"Test12" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 18 01:48 MSK

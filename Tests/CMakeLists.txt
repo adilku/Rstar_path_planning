@@ -1,8 +1,14 @@
 include_directories(../Src)
 
+
 add_executable(testbench testbench.cpp)
+#find_package(SFML 2.5 COMPONENTS graphics REQUIRED)
+#target_link_libraries(testbench sfml-graphics)
+
 
 target_link_libraries(testbench PPLIB)
+
+
 
 add_test(NAME Test1 COMMAND testbench ../../../TestData/0_test.xml)
 add_test(NAME Test2 COMMAND testbench ../../../TestData/1_test.xml)

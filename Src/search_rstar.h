@@ -7,6 +7,7 @@
 #include "searchresult_rstar.h"
 #include "environmentoptions.h"
 #include <SFML/Graphics.hpp>
+#include "draw_path.h"
 //#include "SFML/include/SFML/Graphics.hpp"
 #include "search.h"
 #include <list>
@@ -19,13 +20,14 @@
 #include <map>
 #include <tuple>
 #include <random>
-#include "draw_path.h"
 #include "open_rstar.h"
 
 
 class Search_Rstar {
 public:
     Search_Rstar();
+
+    int time_of_rand;
 
     ~Search_Rstar(void);
 
@@ -49,11 +51,11 @@ protected:
 
     static void CheckRandomNeighbours(NodeRstar &v, const Map &map, const EnvironmentOptions &options, std::vector<std::pair<int, int>> &neighbours);
 
-    void makePrimaryPath(std::shared_ptr<NodeRstar> curNode);
+    void makePrimaryPath(NodeRstar* curNode);
 
     void makeSecondaryPath();
 
-    void updateState(NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
+    static void updateState(NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 
     void ReevaluteState(ILogger * Logger, NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map);
 };

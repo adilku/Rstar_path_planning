@@ -94,7 +94,7 @@ bool getRealResults(const char* fileName, float* realLen)
         std::cerr << "Error! No '" << CNS_TAG_ATTR_LENGTH<< "' tag found in XML file!" << std::endl;
         return false;
     }
-    
+
     *realLen = len;
 
     return true;

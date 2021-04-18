@@ -18,7 +18,7 @@ struct NodeRstar {
     int i, j; //grid cell coordinates
     int avoid;
     double F, g; //f-, g- and h-values of the search node
-    std::shared_ptr<NodeRstar> bp; //backpointer to the predecessor node (e.g. the node which g-value was used to set the g-velue of the current node)
+    NodeRstar * bp; //backpointer to the predecessor node (e.g. the node which g-value was used to set the g-velue of the current node)
     std::shared_ptr<std::map<double, NodeRstar> > predecessors_nodes; // predecessors_nodes with C_low(path_s'_s)
     std::shared_ptr<std::list<Node>> path_to_bp; // path tp backpointer
     double C_low; // 'edge' to bp
@@ -35,7 +35,7 @@ struct NodeRstar {
         C_low = 0;
     }
 
-    NodeRstar(int i_, int j_, int avoid_, double F_, double g_, std::shared_ptr<NodeRstar> bp_,
+    NodeRstar(int i_, int j_, int avoid_, double F_, double g_, NodeRstar* bp_,
               std::shared_ptr<std::map<double, NodeRstar> > predecessors_nodes_,
               std::shared_ptr<std::list<Node>> path_to_bp_, double C_low_) {
         i = i_;
@@ -43,7 +43,7 @@ struct NodeRstar {
         avoid = avoid_;
         F = F_;
         g = g_;
-        bp = std::move(bp_);
+        bp = bp_;
         predecessors_nodes = predecessors_nodes_;
         path_to_bp = path_to_bp_;
         C_low = C_low_;

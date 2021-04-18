@@ -5,6 +5,7 @@
 
 Search_Rstar::Search_Rstar() {
 //set defaults here
+    time_of_rand = 0;
 }
 
 Search_Rstar::~Search_Rstar() = default;
@@ -14,6 +15,7 @@ Search_Rstar::~Search_Rstar() = default;
 void
 Search_Rstar::CheckRandomNeighbours(NodeRstar &v, const Map &map, const EnvironmentOptions &options,
                                     std::vector<std::pair<int, int>> &neighbours) {
+
     std::random_device rd;
     std::mt19937 generator(rd());
     std::uniform_real_distribution<> distr(0, 2 * M_PI);
@@ -48,10 +50,11 @@ double Search_Rstar::get_heuristic(Point from, Point to, const EnvironmentOption
 
 
 void Search_Rstar::updateState(NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map) {
+
     double W = options.hweight;
     Point start = map.getCoordinatesStart();
     Point goal = map.getCoordinatesGoal();
-    state.F = state.g + get_heuristic({state.i, state.j}, goal, options);
+    state.F = state.g + W * get_heuristic({state.i, state.j}, goal, options);
     if (state.g > W * get_heuristic(start, {state.i, state.j}, options) ||
         (state.bp == nullptr && state.avoid == 1)) {
         state.avoid = 1;
@@ -76,6 +79,7 @@ void Search_Rstar::updateState(NodeRstar &state, open_rstar &open, const Environ
             open.insert(state);
         }
     }
+
 }
 
 void
@@ -86,6 +90,8 @@ Search_Rstar::ReevaluteState(ILogger *Logger, NodeRstar &state, open_rstar &open
     Point start = map.getCoordinatesStart();
     SearchResult local_res = cur_search.startSearch(Logger, map, options, {state.i, state.j},
                                                     {state.bp->i, state.bp->j});
+
+    time_of_rand += local_res.numberofsteps;
     if (local_res.pathfound) {
         state.path_to_bp = local_res.lppath;
         state.C_low = local_res.pathlength;
@@ -94,7 +100,7 @@ Search_Rstar::ReevaluteState(ILogger *Logger, NodeRstar &state, open_rstar &open
         state.bp->g + state.C_low > W * get_heuristic(start, {state.i, state.j}, options)) {
         NodeRstar min_state;
         if (state.path_to_bp->size() > 1) {
-            state.bp = std::make_shared<NodeRstar>(state.predecessors_nodes->begin()->second);
+            state.bp = &(state.predecessors_nodes->begin()->second);
         }
         state.avoid = 1;
     }
@@ -130,16 +136,18 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             window.close();
     }
 #endif
+
+
     //-----------------end visual init
 
    // search test
-   /*
+
    Search new_search;
    auto temp = new_search.startSearch(Logger, map, options, map.getCoordinatesStart(), map.getCoordinatesGoal());
    std::cout << "nodes a* " << temp.numberofsteps << ' ' << temp.nodescreated << '\n';
    std::cout << "time a* " << temp.time << '\n';
    std::cout << "len a* " << temp.pathlength << '\n';
-
+    /*
    std::cout << new_search.close_map.size() << '\n';
    for (auto i : new_search.close_map) {
        render.draw_point(window, event, i.first.first, i.first.second, 2);
@@ -148,6 +156,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
    //return sresult;
 
     auto startTime = std::chrono::high_resolution_clock::now();
+
     open_rstar open(options.breakingties);
     Point start = map.getCoordinatesStart();
     Point goal = map.getCoordinatesGoal();
@@ -188,6 +197,8 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             ReevaluteState(Logger, s, open, options, map);
         } else {
             close_map[{s.i, s.j}] = s;
+            //std::shared_ptr<NodeRstar>s_pointer = std::make_shared<NodeRstar> (close_map[{s.i,s.j}]);
+            NodeRstar * s_pointer = &close_map[{s.i, s.j}];
 #ifdef VISUAL_MODE
             render.draw_point(window, event, s.i, s.j, 2);
 #endif
@@ -222,7 +233,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
                     }
                     if (s_to_node.bp == nullptr || s.g + s_to_node.C_low < s_to_node.g) {
                         s_to_node.g = s.g + s_to_node.C_low;
-                        s_to_node.bp = std::make_shared<NodeRstar>(s);
+                        s_to_node.bp = s_pointer;
                         s_to_node.predecessors_nodes->insert({s_to_node.C_low, s});
                         updateState(s_to_node, open, options, map);
                     }
@@ -231,8 +242,9 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
         }
     }
     auto endTime = std::chrono::high_resolution_clock::now();
+
     sresult.time = (std::chrono::duration<double>(endTime - startTime)).count();
-    makePrimaryPath(std::make_shared<NodeRstar>(goal_state));
+    makePrimaryPath(&close_map[{goal.i, goal.j}]);
 
     if (sresult.pathfound) {
         sresult.pathlength = goal_state.g;
@@ -260,11 +272,11 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
         }
     }
 #endif
-
+    std::cout << '\n' << time_of_rand << '\n';
     return sresult;
 }
 
-void Search_Rstar::makePrimaryPath(std::shared_ptr<NodeRstar> curNode) {
+void Search_Rstar::makePrimaryPath(NodeRstar *curNode) {
     lppath.push_front(*curNode);
     while (curNode) {
         if (curNode->path_to_bp != nullptr) {

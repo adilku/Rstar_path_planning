@@ -652,8 +652,8 @@
     <searchtype>astar</searchtype>
     <metrictype>manhattan</metrictype>
     <breakingties>g-max</breakingties>
-    <hweight>1</hweight>
-    <numberofstates>15</numberofstates>
+    <hweight>3</hweight>
+    <numberofstates>20</numberofstates>
     <radius>60</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>
