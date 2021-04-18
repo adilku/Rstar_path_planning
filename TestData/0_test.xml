@@ -528,12 +528,12 @@
         <searchtype>astar</searchtype>
         <metrictype>manhattan</metrictype>
         <breakingties>g-max</breakingties>
-        <hweight>3</hweight>
-        <numberofstates>20</numberofstates>
-        <radius>60</radius>
-        <allowdiagonal>true</allowdiagonal>
-        <cutcorners>true</cutcorners>
-        <allowsqueeze>true</allowsqueeze>
+        <hweight>1</hweight>
+        <numberofstates>4</numberofstates>
+        <radius>2</radius>
+        <allowdiagonal>false</allowdiagonal>
+        <cutcorners>false</cutcorners>
+        <allowsqueeze>false</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

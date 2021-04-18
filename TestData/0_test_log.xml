@@ -525,13 +525,15 @@
         </grid>
     </map>
     <algorithm>
-        <metrictype>diagonal</metrictype>
         <searchtype>astar</searchtype>
-        <hweight>1</hweight>
+        <metrictype>manhattan</metrictype>
         <breakingties>g-max</breakingties>
-        <allowdiagonal>0</allowdiagonal>
-        <allowsqueeze>0</allowsqueeze>
-        <cutcorners>0</cutcorners>
+        <hweight>1</hweight>
+        <numberofstates>4</numberofstates>
+        <radius>2</radius>
+        <allowdiagonal>false</allowdiagonal>
+        <cutcorners>false</cutcorners>
+        <allowsqueeze>false</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>
@@ -540,13 +542,13 @@
     </options>
     <log>
         <mapfilename>../Data/0_Mazes4_di_gmax_nad.xml</mapfilename>
-        <summary numberofsteps="28234" nodescreated="28316" length="767" length_scaled="3835" time="0.031275"/>
-        <path/>
+        <summary numberofsteps="0" nodescreated="0" length="0" length_scaled="0" time="6.257125"/>
+        <path>Path NOT found!</path>
         <lplevel/>
         <hplevel/>
     </log>
     <log>
-        <mapfilename>../../TestData/0_test.xml</mapfilename>
+        <mapfilename>/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/TestData/0_test.xml</mapfilename>
         <summary/>
         <path/>
         <lplevel/>

@@ -6,8 +6,10 @@
 #include "searchresult.h"
 #include "searchresult_rstar.h"
 #include "environmentoptions.h"
+#ifdef VISUAL_MODE
 #include <SFML/Graphics.hpp>
 #include "draw_path.h"
+#endif
 //#include "SFML/include/SFML/Graphics.hpp"
 #include "search.h"
 #include <list>

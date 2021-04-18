@@ -131,6 +131,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             window.close();
     }
     render.launch(map, window);
+    render.draw_point(window, event, map.getCoordinatesGoal().i, map.getCoordinatesGoal().j, 4);
     while (window.pollEvent(event)) {
         if (event.type == sf::Event::Closed)
             window.close();

@@ -76,32 +76,32 @@
     </options>
     <log>
         <mapfilename>/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Examples/example_rstar.xml</mapfilename>
-        <summary numberofsteps="15" nodescreated="36" length="48.455845" length_scaled="48.455844879150391" time="0.069347"/>
+        <summary numberofsteps="26" nodescreated="56" length="52.798988" length_scaled="52.798988342285156" time="0.144392"/>
         <path>
             <row number="0">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 </row>
             <row number="1">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
-            <row number="2">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
-            <row number="3">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="4">1 0 0 0 0 * * * * * * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="5">1 0 0 0 0 0 0 0 0 0 0 * * * * * * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="6">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="7">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="8">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="9">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="10">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="11">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="12">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="13">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="14">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="15">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 * 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
-            <row number="16">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 * 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
-            <row number="17">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 * 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
-            <row number="18">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 * * * * * 0 1 1 1 * * 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
-            <row number="19">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * * * * 0 0 * 0 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="20">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="21">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 1 </row>
-            <row number="22">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 1 </row>
-            <row number="23">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 1 </row>
+            <row number="2">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 * * * * * 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="3">1 0 0 0 0 0 0 0 0 0 0 * * * * * * * 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="4">1 0 0 0 0 * * * * * * 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="5">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="6">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="7">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="8">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="9">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="10">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="11">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="12">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * * * * * * * 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="13">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="14">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 0 0 1 </row>
+            <row number="15">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 * 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="16">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 * 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="17">1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 0 0 * 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="18">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 * 0 0 0 0 0 0 0 0 1 1 </row>
+            <row number="19">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 0 1 </row>
+            <row number="20">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 0 1 </row>
+            <row number="21">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 1 </row>
+            <row number="22">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 1 </row>
+            <row number="23">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 1 </row>
             <row number="24">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 * 0 0 0 0 0 0 1 </row>
             <row number="25">1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
             <row number="26">1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 </row>
@@ -135,42 +135,48 @@
             <node x="8" y="4" number="3"/>
             <node x="9" y="4" number="4"/>
             <node x="10" y="4" number="5"/>
-            <node x="11" y="5" number="6"/>
-            <node x="12" y="5" number="7"/>
-            <node x="13" y="5" number="8"/>
-            <node x="14" y="5" number="9"/>
-            <node x="15" y="5" number="10"/>
-            <node x="16" y="5" number="11"/>
-            <node x="17" y="6" number="12"/>
-            <node x="18" y="7" number="13"/>
-            <node x="19" y="8" number="14"/>
-            <node x="19" y="9" number="15"/>
-            <node x="19" y="10" number="16"/>
-            <node x="19" y="11" number="17"/>
-            <node x="20" y="12" number="18"/>
-            <node x="21" y="13" number="19"/>
-            <node x="22" y="14" number="20"/>
-            <node x="23" y="15" number="21"/>
-            <node x="23" y="16" number="22"/>
-            <node x="24" y="17" number="23"/>
-            <node x="25" y="18" number="24"/>
-            <node x="26" y="18" number="25"/>
-            <node x="27" y="18" number="26"/>
-            <node x="28" y="18" number="27"/>
-            <node x="29" y="18" number="28"/>
-            <node x="30" y="19" number="29"/>
-            <node x="31" y="19" number="30"/>
-            <node x="32" y="19" number="31"/>
-            <node x="33" y="19" number="32"/>
-            <node x="34" y="18" number="33"/>
-            <node x="35" y="18" number="34"/>
-            <node x="36" y="19" number="35"/>
-            <node x="37" y="20" number="36"/>
-            <node x="38" y="21" number="37"/>
-            <node x="39" y="22" number="38"/>
-            <node x="40" y="23" number="39"/>
-            <node x="41" y="24" number="40"/>
-            <node x="41" y="24" number="41"/>
+            <node x="11" y="3" number="6"/>
+            <node x="12" y="3" number="7"/>
+            <node x="13" y="3" number="8"/>
+            <node x="14" y="3" number="9"/>
+            <node x="15" y="3" number="10"/>
+            <node x="16" y="3" number="11"/>
+            <node x="17" y="3" number="12"/>
+            <node x="18" y="2" number="13"/>
+            <node x="19" y="2" number="14"/>
+            <node x="20" y="2" number="15"/>
+            <node x="21" y="2" number="16"/>
+            <node x="22" y="2" number="17"/>
+            <node x="23" y="3" number="18"/>
+            <node x="24" y="4" number="19"/>
+            <node x="25" y="5" number="20"/>
+            <node x="26" y="6" number="21"/>
+            <node x="27" y="6" number="22"/>
+            <node x="28" y="7" number="23"/>
+            <node x="29" y="8" number="24"/>
+            <node x="29" y="9" number="25"/>
+            <node x="29" y="10" number="26"/>
+            <node x="29" y="11" number="27"/>
+            <node x="29" y="12" number="28"/>
+            <node x="30" y="12" number="29"/>
+            <node x="31" y="12" number="30"/>
+            <node x="32" y="12" number="31"/>
+            <node x="33" y="12" number="32"/>
+            <node x="34" y="12" number="33"/>
+            <node x="35" y="12" number="34"/>
+            <node x="36" y="13" number="35"/>
+            <node x="37" y="14" number="36"/>
+            <node x="38" y="15" number="37"/>
+            <node x="38" y="16" number="38"/>
+            <node x="38" y="17" number="39"/>
+            <node x="38" y="18" number="40"/>
+            <node x="39" y="19" number="41"/>
+            <node x="40" y="20" number="42"/>
+            <node x="41" y="21" number="43"/>
+            <node x="41" y="22" number="44"/>
+            <node x="41" y="23" number="45"/>
+            <node x="41" y="24" number="46"/>
+            <node x="41" y="24" number="47"/>
         </lplevel>
         <hplevel>
             <section number="0" staztz.x="5" start.y="4" finish.x="6" finish.y="4" length="0"/>
@@ -178,42 +184,48 @@
             <section number="2" staztz.x="7" start.y="4" finish.x="8" finish.y="4" length="0"/>
             <section number="3" staztz.x="8" start.y="4" finish.x="9" finish.y="4" length="0"/>
             <section number="4" staztz.x="9" start.y="4" finish.x="10" finish.y="4" length="0"/>
-            <section number="5" staztz.x="10" start.y="4" finish.x="11" finish.y="5" length="6.4142136573791504"/>
-            <section number="6" staztz.x="11" start.y="5" finish.x="12" finish.y="5" length="0"/>
-            <section number="7" staztz.x="12" start.y="5" finish.x="13" finish.y="5" length="0"/>
-            <section number="8" staztz.x="13" start.y="5" finish.x="14" finish.y="5" length="0"/>
-            <section number="9" staztz.x="14" start.y="5" finish.x="15" finish.y="5" length="0"/>
-            <section number="10" staztz.x="15" start.y="5" finish.x="16" finish.y="5" length="0"/>
-            <section number="11" staztz.x="16" start.y="5" finish.x="17" finish.y="6" length="7.242640495300293"/>
-            <section number="12" staztz.x="17" start.y="6" finish.x="18" finish.y="7" length="0"/>
-            <section number="13" staztz.x="18" start.y="7" finish.x="19" finish.y="8" length="0"/>
-            <section number="14" staztz.x="19" start.y="8" finish.x="19" finish.y="9" length="0"/>
-            <section number="15" staztz.x="19" start.y="9" finish.x="19" finish.y="10" length="0"/>
-            <section number="16" staztz.x="19" start.y="10" finish.x="19" finish.y="11" length="0"/>
-            <section number="17" staztz.x="19" start.y="11" finish.x="20" finish.y="12" length="6.6568541526794434"/>
-            <section number="18" staztz.x="20" start.y="12" finish.x="21" finish.y="13" length="0"/>
-            <section number="19" staztz.x="21" start.y="13" finish.x="22" finish.y="14" length="0"/>
-            <section number="20" staztz.x="22" start.y="14" finish.x="23" finish.y="15" length="0"/>
-            <section number="21" staztz.x="23" start.y="15" finish.x="23" finish.y="16" length="0"/>
-            <section number="22" staztz.x="23" start.y="16" finish.x="24" finish.y="17" length="6.8284273147583008"/>
-            <section number="23" staztz.x="24" start.y="17" finish.x="25" finish.y="18" length="0"/>
-            <section number="24" staztz.x="25" start.y="18" finish.x="26" finish.y="18" length="0"/>
-            <section number="25" staztz.x="26" start.y="18" finish.x="27" finish.y="18" length="0"/>
-            <section number="26" staztz.x="27" start.y="18" finish.x="28" finish.y="18" length="0"/>
-            <section number="27" staztz.x="28" start.y="18" finish.x="29" finish.y="18" length="0"/>
-            <section number="28" staztz.x="29" start.y="18" finish.x="30" finish.y="19" length="6.8284273147583008"/>
-            <section number="29" staztz.x="30" start.y="19" finish.x="31" finish.y="19" length="0"/>
-            <section number="30" staztz.x="31" start.y="19" finish.x="32" finish.y="19" length="0"/>
-            <section number="31" staztz.x="32" start.y="19" finish.x="33" finish.y="19" length="0"/>
-            <section number="32" staztz.x="33" start.y="19" finish.x="34" finish.y="18" length="0"/>
-            <section number="33" staztz.x="34" start.y="18" finish.x="35" finish.y="18" length="0"/>
-            <section number="34" staztz.x="35" start.y="18" finish.x="36" finish.y="19" length="8.4852809906005859"/>
-            <section number="35" staztz.x="36" start.y="19" finish.x="37" finish.y="20" length="0"/>
-            <section number="36" staztz.x="37" start.y="20" finish.x="38" finish.y="21" length="0"/>
-            <section number="37" staztz.x="38" start.y="21" finish.x="39" finish.y="22" length="0"/>
-            <section number="38" staztz.x="39" start.y="22" finish.x="40" finish.y="23" length="0"/>
-            <section number="39" staztz.x="40" start.y="23" finish.x="41" finish.y="24" length="0"/>
-            <section number="40" staztz.x="41" start.y="24" finish.x="41" finish.y="24" length="0"/>
+            <section number="5" staztz.x="10" start.y="4" finish.x="11" finish.y="3" length="6.4142136573791504"/>
+            <section number="6" staztz.x="11" start.y="3" finish.x="12" finish.y="3" length="0"/>
+            <section number="7" staztz.x="12" start.y="3" finish.x="13" finish.y="3" length="0"/>
+            <section number="8" staztz.x="13" start.y="3" finish.x="14" finish.y="3" length="0"/>
+            <section number="9" staztz.x="14" start.y="3" finish.x="15" finish.y="3" length="0"/>
+            <section number="10" staztz.x="15" start.y="3" finish.x="16" finish.y="3" length="0"/>
+            <section number="11" staztz.x="16" start.y="3" finish.x="17" finish.y="3" length="6.4142136573791504"/>
+            <section number="12" staztz.x="17" start.y="3" finish.x="18" finish.y="2" length="0"/>
+            <section number="13" staztz.x="18" start.y="2" finish.x="19" finish.y="2" length="0"/>
+            <section number="14" staztz.x="19" start.y="2" finish.x="20" finish.y="2" length="0"/>
+            <section number="15" staztz.x="20" start.y="2" finish.x="21" finish.y="2" length="0"/>
+            <section number="16" staztz.x="21" start.y="2" finish.x="22" finish.y="2" length="0"/>
+            <section number="17" staztz.x="22" start.y="2" finish.x="23" finish.y="3" length="6.6568541526794434"/>
+            <section number="18" staztz.x="23" start.y="3" finish.x="24" finish.y="4" length="0"/>
+            <section number="19" staztz.x="24" start.y="4" finish.x="25" finish.y="5" length="0"/>
+            <section number="20" staztz.x="25" start.y="5" finish.x="26" finish.y="6" length="0"/>
+            <section number="21" staztz.x="26" start.y="6" finish.x="27" finish.y="6" length="0"/>
+            <section number="22" staztz.x="27" start.y="6" finish.x="28" finish.y="7" length="6.8284273147583008"/>
+            <section number="23" staztz.x="28" start.y="7" finish.x="29" finish.y="8" length="0"/>
+            <section number="24" staztz.x="29" start.y="8" finish.x="29" finish.y="9" length="0"/>
+            <section number="25" staztz.x="29" start.y="9" finish.x="29" finish.y="10" length="0"/>
+            <section number="26" staztz.x="29" start.y="10" finish.x="29" finish.y="11" length="0"/>
+            <section number="27" staztz.x="29" start.y="11" finish.x="29" finish.y="12" length="0"/>
+            <section number="28" staztz.x="29" start.y="12" finish.x="30" finish.y="12" length="6"/>
+            <section number="29" staztz.x="30" start.y="12" finish.x="31" finish.y="12" length="0"/>
+            <section number="30" staztz.x="31" start.y="12" finish.x="32" finish.y="12" length="0"/>
+            <section number="31" staztz.x="32" start.y="12" finish.x="33" finish.y="12" length="0"/>
+            <section number="32" staztz.x="33" start.y="12" finish.x="34" finish.y="12" length="0"/>
+            <section number="33" staztz.x="34" start.y="12" finish.x="35" finish.y="12" length="0"/>
+            <section number="34" staztz.x="35" start.y="12" finish.x="36" finish.y="13" length="7.242640495300293"/>
+            <section number="35" staztz.x="36" start.y="13" finish.x="37" finish.y="14" length="0"/>
+            <section number="36" staztz.x="37" start.y="14" finish.x="38" finish.y="15" length="0"/>
+            <section number="37" staztz.x="38" start.y="15" finish.x="38" finish.y="16" length="0"/>
+            <section number="38" staztz.x="38" start.y="16" finish.x="38" finish.y="17" length="0"/>
+            <section number="39" staztz.x="38" start.y="17" finish.x="38" finish.y="18" length="0"/>
+            <section number="40" staztz.x="38" start.y="18" finish.x="39" finish.y="19" length="7.242640495300293"/>
+            <section number="41" staztz.x="39" start.y="19" finish.x="40" finish.y="20" length="0"/>
+            <section number="42" staztz.x="40" start.y="20" finish.x="41" finish.y="21" length="0"/>
+            <section number="43" staztz.x="41" start.y="21" finish.x="41" finish.y="22" length="0"/>
+            <section number="44" staztz.x="41" start.y="22" finish.x="41" finish.y="23" length="0"/>
+            <section number="45" staztz.x="41" start.y="23" finish.x="41" finish.y="24" length="0"/>
+            <section number="46" staztz.x="41" start.y="24" finish.x="41" finish.y="24" length="0"/>
         </hplevel>
     </log>
 </root>

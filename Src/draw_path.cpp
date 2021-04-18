@@ -97,6 +97,8 @@ void sfml_draw::draw_point(sf::RenderWindow &window, sf::Event event, int i, int
             quad.setFillColor(sf::Color::Red);
         } else if (color == 3) {
             quad.setFillColor(sf::Color::Green);
+        } else if (color == 4) {
+            quad = sf::RectangleShape(sf::Vector2f(10 * sizeOfRect, 10 * sizeOfRect));
         }
         quad.setPosition((double) j * sizeOfRect, (float) i * sizeOfRect);
         window.draw(quad);
