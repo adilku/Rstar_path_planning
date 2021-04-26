@@ -126,7 +126,7 @@ make install
 ```
 
 Сборка с визуализацией:
-```
+```bash
 cd PathPlanningProject
 cd Build
 cd Debug
