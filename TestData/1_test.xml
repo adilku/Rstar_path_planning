@@ -525,13 +525,15 @@
         </grid>
     </map>
     <algorithm>
-        <metrictype>diagonal</metrictype>
         <searchtype>astar</searchtype>
-        <hweight>1</hweight>
-        <breakingties>g-min</breakingties>
-        <allowdiagonal>0</allowdiagonal>
-        <allowsqueeze>0</allowsqueeze>
-        <cutcorners>0</cutcorners>
+        <metrictype>manhattan</metrictype>
+        <breakingties>g-max</breakingties>
+        <hweight>10</hweight>
+        <numberofstates>6</numberofstates>
+        <radius>2</radius>
+        <allowdiagonal>false</allowdiagonal>
+        <cutcorners>false</cutcorners>
+        <allowsqueeze>false</allowsqueeze>
     </algorithm>
     <options>
         <loglevel>0.5</loglevel>

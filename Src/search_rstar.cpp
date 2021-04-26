@@ -5,7 +5,6 @@
 
 Search_Rstar::Search_Rstar() {
 //set defaults here
-    time_of_rand = 0;
 }
 
 Search_Rstar::~Search_Rstar() = default;
@@ -91,7 +90,7 @@ Search_Rstar::ReevaluteState(ILogger *Logger, NodeRstar &state, open_rstar &open
     SearchResult local_res = cur_search.startSearch(Logger, map, options, {state.i, state.j},
                                                     {state.bp->i, state.bp->j});
 
-    time_of_rand += local_res.numberofsteps;
+    sresult.nodescreated += local_res.numberofsteps;
     if (local_res.pathfound) {
         state.path_to_bp = local_res.lppath;
         state.C_low = local_res.pathlength;
@@ -137,18 +136,16 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             window.close();
     }
 #endif
-
-
     //-----------------end visual init
 
    // search test
-
+    /*
    Search new_search;
    auto temp = new_search.startSearch(Logger, map, options, map.getCoordinatesStart(), map.getCoordinatesGoal());
    std::cout << "nodes a* " << temp.numberofsteps << ' ' << temp.nodescreated << '\n';
    std::cout << "time a* " << temp.time << '\n';
    std::cout << "len a* " << temp.pathlength << '\n';
-    /*
+
    std::cout << new_search.close_map.size() << '\n';
    for (auto i : new_search.close_map) {
        render.draw_point(window, event, i.first.first, i.first.second, 2);
@@ -196,6 +193,11 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
 #endif
         if (!(s.i == start.i && s.j == start.j) && s.path_to_bp == nullptr) {
             ReevaluteState(Logger, s, open, options, map);
+#ifdef VISUAL_MODE
+            if (s.path_to_bp != nullptr) {
+                render.draw_local_path(window, event, s.path_to_bp);
+            }
+#endif
         } else {
             close_map[{s.i, s.j}] = s;
             //std::shared_ptr<NodeRstar>s_pointer = std::make_shared<NodeRstar> (close_map[{s.i,s.j}]);
@@ -251,11 +253,10 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
         sresult.pathlength = goal_state.g;
         sresult.lppath = &lppath;
         sresult.hppath = &lppath;
-        sresult.nodescreated = cnt_steps + open.open_heap.size();
+        sresult.nodescreated += cnt_steps + open.open_heap.size();
         sresult.numberofsteps = cnt_steps;
     }
 
-    //render.draw_path(window, event, lppath);
 
 #ifdef VISUAL_MODE
     for (auto &i : lppath) {
@@ -273,7 +274,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
         }
     }
 #endif
-    std::cout << '\n' << time_of_rand << '\n';
+
     return sresult;
 }
 

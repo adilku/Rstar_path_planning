@@ -29,8 +29,6 @@ class Search_Rstar {
 public:
     Search_Rstar();
 
-    int time_of_rand;
-
     ~Search_Rstar(void);
 
     SearchResult_rstar startSearch(ILogger *Logger, const Map &Map, const EnvironmentOptions &options);

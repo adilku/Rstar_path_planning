@@ -64,12 +64,11 @@ endif()
 
 find_package(SFML 2.5 COMPONENTS graphics REQUIRED CONFIG)
 
-if (${VISUAL_MODE})
-        message(STATUS "pizdecc")
-endif()
-
 
 add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES} main.cpp)
+
+
+
 
 target_link_libraries(${PROJECT_NAME} sfml-graphics)
 

@@ -528,8 +528,8 @@
         <searchtype>astar</searchtype>
         <metrictype>manhattan</metrictype>
         <breakingties>g-max</breakingties>
-        <hweight>1</hweight>
-        <numberofstates>4</numberofstates>
+        <hweight>10</hweight>
+        <numberofstates>6</numberofstates>
         <radius>2</radius>
         <allowdiagonal>false</allowdiagonal>
         <cutcorners>false</cutcorners>
@@ -542,8 +542,8 @@
     </options>
     <log>
         <mapfilename>../Data/0_Mazes4_di_gmax_nad.xml</mapfilename>
-        <summary numberofsteps="0" nodescreated="0" length="0" length_scaled="0" time="6.257125"/>
-        <path>Path NOT found!</path>
+        <summary numberofsteps="24411" nodescreated="24764" length="935" length_scaled="4675" time="0.355830"/>
+        <path/>
         <lplevel/>
         <hplevel/>
     </log>

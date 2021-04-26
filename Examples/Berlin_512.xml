@@ -526,7 +526,7 @@
     <metrictype>manhattan</metrictype>
     <breakingties>g-max</breakingties>
     <hweight>2</hweight>
-    <numberofstates>60</numberofstates>
+    <numberofstates>12</numberofstates>
     <radius>30</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>

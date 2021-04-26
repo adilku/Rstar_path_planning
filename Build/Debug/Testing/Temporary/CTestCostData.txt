@@ -1,0 +1,193 @@
+Test1 30 0.0215985
+Test2 26 0.0224782
+Test3 25 0.0299448
+Test4 25 0.0204737
+Test5 25 0.0179163
+Test6 25 0.0054205
+Test7 25 0.00672684
+Test8 25 0.00607
+Test9 25 0.0060335
+Test10 25 0.00536081
+Test11 25 0.0050907
+Test12 25 0.0050026
+validate_0 1 0
+validate_1 1 0
+validate_2 1 0
+validate_3 1 0
+validate_4 1 0
+validate_5 1 0
+validate_6 1 0
+validate_7 1 0
+validate_8 1 0
+validate_9 1 0
+validate_10 1 0
+validate_11 1 0
+validate_12 1 0
+validate_13 1 0
+validate_14 0 0
+validate_15 0 0
+validate_16 0 0
+validate_17 0 0
+validate_18 0 0
+validate_19 0 0
+validate_20 0 0
+validate_21 0 0
+validate_22 0 0
+validate_23 0 0
+validate_24 0 0
+validate_25 0 0
+validate_26 0 0
+validate_27 0 0
+validate_28 0 0
+validate_29 0 0
+validate_30 0 0
+validate_31 0 0
+validate_32 0 0
+validate_33 0 0
+validate_34 0 0
+validate_35 0 0
+validate_36 0 0
+validate_37 0 0
+validate_38 0 0
+validate_39 0 0
+validate_40 0 0
+validate_41 0 0
+validate_42 0 0
+validate_43 0 0
+validate_44 0 0
+validate_45 0 0
+validate_46 0 0
+validate_47 0 0
+validate_48 0 0
+validate_49 0 0
+validate_50 0 0
+validate_51 0 0
+validate_52 0 0
+validate_53 0 0
+validate_54 0 0
+validate_55 0 0
+validate_56 0 0
+validate_57 0 0
+validate_58 0 0
+validate_59 0 0
+validate_60 0 0
+validate_61 0 0
+validate_62 0 0
+validate_63 0 0
+validate_64 0 0
+validate_65 0 0
+validate_66 0 0
+validate_67 0 0
+validate_68 0 0
+validate_69 0 0
+validate_70 0 0
+validate_71 0 0
+validate_72 0 0
+validate_73 0 0
+validate_74 0 0
+validate_75 0 0
+validate_76 0 0
+validate_77 0 0
+validate_78 0 0
+validate_79 0 0
+validate_80 0 0
+validate_81 0 0
+validate_82 0 0
+validate_83 0 0
+validate_84 0 0
+validate_85 0 0
+validate_86 0 0
+validate_87 0 0
+validate_88 0 0
+validate_89 0 0
+---
+validate_0
+validate_1
+validate_2
+validate_3
+validate_4
+validate_5
+validate_6
+validate_7
+validate_8
+validate_9
+validate_10
+validate_11
+validate_12
+validate_13
+validate_14
+validate_15
+validate_16
+validate_17
+validate_18
+validate_19
+validate_20
+validate_21
+validate_22
+validate_23
+validate_24
+validate_25
+validate_26
+validate_27
+validate_28
+validate_29
+validate_30
+validate_31
+validate_32
+validate_33
+validate_34
+validate_35
+validate_36
+validate_37
+validate_38
+validate_39
+validate_40
+validate_41
+validate_42
+validate_43
+validate_44
+validate_45
+validate_46
+validate_47
+validate_48
+validate_49
+validate_50
+validate_51
+validate_52
+validate_53
+validate_54
+validate_55
+validate_56
+validate_57
+validate_58
+validate_59
+validate_60
+validate_61
+validate_62
+validate_63
+validate_64
+validate_65
+validate_66
+validate_67
+validate_68
+validate_69
+validate_70
+validate_71
+validate_72
+validate_73
+validate_74
+validate_75
+validate_76
+validate_77
+validate_78
+validate_79
+validate_80
+validate_81
+validate_82
+validate_83
+validate_84
+validate_85
+validate_86
+validate_87
+validate_88
+validate_89

@@ -8,6 +8,18 @@ add_executable(testbench testbench.cpp)
 
 target_link_libraries(testbench PPLIB)
 
+set(validator ${CMAKE_CURRENT_SOURCE_DIR}/testbench)
+
+file(GLOB files "${CMAKE_CURRENT_SOURCE_DIR}/../TestData/street-map_xml/*.xml")
+set(i 0)
+
+message(STATUS ${CMAKE_CURRENT_SOURCE_DIR})
+
+foreach(filename ${files})
+    add_test(NAME "validate_${i}"
+            COMMAND testbench ${filename})
+    math(EXPR i "${i} + 1")
+endforeach()
 
 
 add_test(NAME Test1 COMMAND testbench ../../../TestData/0_test.xml)

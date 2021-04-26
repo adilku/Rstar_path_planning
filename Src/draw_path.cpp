@@ -80,7 +80,21 @@ void sfml_draw::draw_local_path( sf::RenderWindow& window, sf::Event event,const
             window.draw(quad);
         }
     }
-    window.display();
+    //draw first and last vertex
+    {
+        sf::RectangleShape quad(sf::Vector2f(sizeOfRect, sizeOfRect));
+        quad.setFillColor(sf::Color::Red);
+        quad.setPosition((double) lppath->begin()->j * sizeOfRect, (float) lppath->begin()->i * sizeOfRect);
+        window.draw(quad);
+        window.display();
+    }
+    {
+        sf::RectangleShape quad(sf::Vector2f(sizeOfRect, sizeOfRect));
+        quad.setFillColor(sf::Color::Red);
+        quad.setPosition((double) lppath->back().j * sizeOfRect, (float) lppath->back().i * sizeOfRect);
+        window.draw(quad);
+        window.display();
+    }
 }
 
 

@@ -59,20 +59,19 @@
     </grid>
   </map>
   <algorithm>
-    <searchtype>astar</searchtype>
+    <searchtype>rstar</searchtype>
     <metrictype>chebyshev</metrictype>
     <breakingties>g-max</breakingties>
     <hweight>3</hweight>
     <numberofstates>4</numberofstates>
-    <radius>7</radius>
+    <radius>4</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>
     <allowsqueeze>true</allowsqueeze>
-
   </algorithm>
   <options>
     <loglevel>1</loglevel>
-    <logpath />
-    <logfilename />
+    <logpath/>
+    <logfilename/>
   </options>
 </root>

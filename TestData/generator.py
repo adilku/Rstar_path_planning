@@ -40,9 +40,9 @@ def generate_object(file: TextIOWrapper, filepath: str, typealgorithm: str):
     searchtype = ET.SubElement(algorithm, 'searchtype')
     searchtype.text = typealgorithm
     numberofstates = ET.SubElement(algorithm, 'numberofstates')
-    numberofstates.text = 30
+    numberofstates.text = "30"
     radius = ET.SubElement(algorithm, 'radius')
-    radius.text = 60
+    radius.text = "60"
     metrictype = ET.SubElement(algorithm, 'metrictype')
     metrictype.text = "chebyshev"
     tree.write(filepath, pretty_print=True)

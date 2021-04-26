@@ -15,11 +15,12 @@ int main(int argc, char* argv[])
         return 0;
     }
     float len;
+    /*
     if(!getRealResults(argv[1], &len))
     {
         return -1;
     }
-
+    */
     Mission mission(argv[1]);
 
     if(!mission.getMap())
@@ -43,8 +44,8 @@ int main(int argc, char* argv[])
     mission.createEnvironmentOptions();
     mission.createSearch();
     mission.startSearch();
-    SearchResult_rstar result = mission.getSearchResult();
-
+    SearchResult result = mission.getSearchResult();
+    std::cout << "time r* = " << result.time << '\n';
     /*
     
     if(abs(len - result.pathlength) > EPS)
