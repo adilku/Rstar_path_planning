@@ -2,10 +2,10 @@
   <map>
     <height>49</height>
     <width>49</width>
-    <startx>4</startx>
-    <starty>4</starty>
-    <finishx>41</finishx>
-    <finishy>24</finishy>
+    <startx>21</startx>
+    <starty>26</starty>
+    <finishx>43</finishx>
+    <finishy>3</finishy>
     <grid>
       <row>1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</row>
       <row>1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 0 1 1 1 0 0 0 1 1 1 1 0 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1</row>
@@ -59,12 +59,12 @@
     </grid>
   </map>
   <algorithm>
-    <searchtype>rstar</searchtype>
+    <searchtype>astar</searchtype>
     <metrictype>chebyshev</metrictype>
     <breakingties>g-max</breakingties>
     <hweight>3</hweight>
     <numberofstates>4</numberofstates>
-    <radius>4</radius>
+    <radius>5</radius>
     <allowdiagonal>true</allowdiagonal>
     <cutcorners>true</cutcorners>
     <allowsqueeze>true</allowsqueeze>
