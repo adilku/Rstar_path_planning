@@ -224,6 +224,14 @@
 			<Option target="PPLIB"/>
 			<Option target="RstarSearch"/>
 		</Unit>
+		<Unit filename="/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.cpp">
+			<Option target="PPLIB"/>
+			<Option target="RstarSearch"/>
+		</Unit>
+		<Unit filename="/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.h">
+			<Option target="PPLIB"/>
+			<Option target="RstarSearch"/>
+		</Unit>
 		<Unit filename="/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/environmentoptions.cpp">
 			<Option target="PPLIB"/>
 			<Option target="RstarSearch"/>

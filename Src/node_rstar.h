@@ -44,8 +44,8 @@ struct NodeRstar {
         F = F_;
         g = g_;
         bp = bp_;
-        predecessors_nodes = predecessors_nodes_;
-        path_to_bp = path_to_bp_;
+        predecessors_nodes = std::move(predecessors_nodes_);
+        path_to_bp = std::move(path_to_bp_);
         C_low = C_low_;
     }
 

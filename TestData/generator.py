@@ -45,6 +45,14 @@ def generate_object(file: TextIOWrapper, filepath: str, typealgorithm: str):
     radius.text = "60"
     metrictype = ET.SubElement(algorithm, 'metrictype')
     metrictype.text = "chebyshev"
+    allowdiagonal = ET.SubElement(algorithm, 'allowdiagonal')
+    allowdiagonal.text = "true"
+    cutcorners = ET.SubElement(algorithm, 'cutcorners')
+    cutcorners.text = "true"
+    allowsqueeze = ET.SubElement(algorithm, 'allowsqueeze')
+    allowsqueeze.text = "true"
+    hweight = ET.SubElement(algorithm, 'hweight')
+    hweight.text = "5"
     tree.write(filepath, pretty_print=True)
 
 def main():

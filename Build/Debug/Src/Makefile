@@ -86,28 +86,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -130,6 +108,28 @@ test:
 test/fast: test
 
 .PHONY : test/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -203,19 +203,19 @@ PPLIB/fast:
 .PHONY : PPLIB/fast
 
 # Convenience name for target.
-Src/CMakeFiles/RstarSearchVisualOn.dir/rule:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/RstarSearchVisualOn.dir/rule
-.PHONY : Src/CMakeFiles/RstarSearchVisualOn.dir/rule
+Src/CMakeFiles/RstarSearch.dir/rule:
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/RstarSearch.dir/rule
+.PHONY : Src/CMakeFiles/RstarSearch.dir/rule
 
 # Convenience name for target.
-RstarSearchVisualOn: Src/CMakeFiles/RstarSearchVisualOn.dir/rule
+RstarSearch: Src/CMakeFiles/RstarSearch.dir/rule
 
-.PHONY : RstarSearchVisualOn
+.PHONY : RstarSearch
 
 # fast build rule for target.
-RstarSearchVisualOn/fast:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/build
-.PHONY : RstarSearchVisualOn/fast
+RstarSearch/fast:
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/build
+.PHONY : RstarSearch/fast
 
 config.o: config.cpp.o
 
@@ -224,7 +224,7 @@ config.o: config.cpp.o
 # target to build an object file
 config.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/config.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/config.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/config.cpp.o
 .PHONY : config.cpp.o
 
 config.i: config.cpp.i
@@ -234,7 +234,7 @@ config.i: config.cpp.i
 # target to preprocess a source file
 config.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/config.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/config.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/config.cpp.i
 .PHONY : config.cpp.i
 
 config.s: config.cpp.s
@@ -244,7 +244,7 @@ config.s: config.cpp.s
 # target to generate assembly for a file
 config.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/config.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/config.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/config.cpp.s
 .PHONY : config.cpp.s
 
 draw_path.o: draw_path.cpp.o
@@ -254,7 +254,7 @@ draw_path.o: draw_path.cpp.o
 # target to build an object file
 draw_path.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/draw_path.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/draw_path.cpp.o
 .PHONY : draw_path.cpp.o
 
 draw_path.i: draw_path.cpp.i
@@ -264,7 +264,7 @@ draw_path.i: draw_path.cpp.i
 # target to preprocess a source file
 draw_path.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/draw_path.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/draw_path.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/draw_path.cpp.i
 .PHONY : draw_path.cpp.i
 
 draw_path.s: draw_path.cpp.s
@@ -274,7 +274,7 @@ draw_path.s: draw_path.cpp.s
 # target to generate assembly for a file
 draw_path.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/draw_path.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/draw_path.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/draw_path.cpp.s
 .PHONY : draw_path.cpp.s
 
 environmentoptions.o: environmentoptions.cpp.o
@@ -284,7 +284,7 @@ environmentoptions.o: environmentoptions.cpp.o
 # target to build an object file
 environmentoptions.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/environmentoptions.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/environmentoptions.cpp.o
 .PHONY : environmentoptions.cpp.o
 
 environmentoptions.i: environmentoptions.cpp.i
@@ -294,7 +294,7 @@ environmentoptions.i: environmentoptions.cpp.i
 # target to preprocess a source file
 environmentoptions.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/environmentoptions.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/environmentoptions.cpp.i
 .PHONY : environmentoptions.cpp.i
 
 environmentoptions.s: environmentoptions.cpp.s
@@ -304,7 +304,7 @@ environmentoptions.s: environmentoptions.cpp.s
 # target to generate assembly for a file
 environmentoptions.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/environmentoptions.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/environmentoptions.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/environmentoptions.cpp.s
 .PHONY : environmentoptions.cpp.s
 
 main.o: main.cpp.o
@@ -313,7 +313,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/main.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -322,7 +322,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/main.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -331,7 +331,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/main.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 map.o: map.cpp.o
@@ -341,7 +341,7 @@ map.o: map.cpp.o
 # target to build an object file
 map.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/map.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/map.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/map.cpp.o
 .PHONY : map.cpp.o
 
 map.i: map.cpp.i
@@ -351,7 +351,7 @@ map.i: map.cpp.i
 # target to preprocess a source file
 map.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/map.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/map.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/map.cpp.i
 .PHONY : map.cpp.i
 
 map.s: map.cpp.s
@@ -361,7 +361,7 @@ map.s: map.cpp.s
 # target to generate assembly for a file
 map.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/map.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/map.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/map.cpp.s
 .PHONY : map.cpp.s
 
 mission.o: mission.cpp.o
@@ -371,7 +371,7 @@ mission.o: mission.cpp.o
 # target to build an object file
 mission.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/mission.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/mission.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/mission.cpp.o
 .PHONY : mission.cpp.o
 
 mission.i: mission.cpp.i
@@ -381,7 +381,7 @@ mission.i: mission.cpp.i
 # target to preprocess a source file
 mission.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/mission.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/mission.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/mission.cpp.i
 .PHONY : mission.cpp.i
 
 mission.s: mission.cpp.s
@@ -391,7 +391,7 @@ mission.s: mission.cpp.s
 # target to generate assembly for a file
 mission.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/mission.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/mission.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/mission.cpp.s
 .PHONY : mission.cpp.s
 
 node_rstar.o: node_rstar.cpp.o
@@ -401,7 +401,7 @@ node_rstar.o: node_rstar.cpp.o
 # target to build an object file
 node_rstar.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/node_rstar.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/node_rstar.cpp.o
 .PHONY : node_rstar.cpp.o
 
 node_rstar.i: node_rstar.cpp.i
@@ -411,7 +411,7 @@ node_rstar.i: node_rstar.cpp.i
 # target to preprocess a source file
 node_rstar.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/node_rstar.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/node_rstar.cpp.i
 .PHONY : node_rstar.cpp.i
 
 node_rstar.s: node_rstar.cpp.s
@@ -421,7 +421,7 @@ node_rstar.s: node_rstar.cpp.s
 # target to generate assembly for a file
 node_rstar.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/node_rstar.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/node_rstar.cpp.s
 .PHONY : node_rstar.cpp.s
 
 open_container.o: open_container.cpp.o
@@ -431,7 +431,7 @@ open_container.o: open_container.cpp.o
 # target to build an object file
 open_container.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/open_container.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/open_container.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/open_container.cpp.o
 .PHONY : open_container.cpp.o
 
 open_container.i: open_container.cpp.i
@@ -441,7 +441,7 @@ open_container.i: open_container.cpp.i
 # target to preprocess a source file
 open_container.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/open_container.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/open_container.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/open_container.cpp.i
 .PHONY : open_container.cpp.i
 
 open_container.s: open_container.cpp.s
@@ -451,7 +451,7 @@ open_container.s: open_container.cpp.s
 # target to generate assembly for a file
 open_container.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/open_container.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/open_container.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/open_container.cpp.s
 .PHONY : open_container.cpp.s
 
 open_rstar.o: open_rstar.cpp.o
@@ -461,7 +461,7 @@ open_rstar.o: open_rstar.cpp.o
 # target to build an object file
 open_rstar.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/open_rstar.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/open_rstar.cpp.o
 .PHONY : open_rstar.cpp.o
 
 open_rstar.i: open_rstar.cpp.i
@@ -471,7 +471,7 @@ open_rstar.i: open_rstar.cpp.i
 # target to preprocess a source file
 open_rstar.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/open_rstar.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/open_rstar.cpp.i
 .PHONY : open_rstar.cpp.i
 
 open_rstar.s: open_rstar.cpp.s
@@ -481,7 +481,7 @@ open_rstar.s: open_rstar.cpp.s
 # target to generate assembly for a file
 open_rstar.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/open_rstar.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/open_rstar.cpp.s
 .PHONY : open_rstar.cpp.s
 
 search.o: search.cpp.o
@@ -491,7 +491,7 @@ search.o: search.cpp.o
 # target to build an object file
 search.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/search.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/search.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/search.cpp.o
 .PHONY : search.cpp.o
 
 search.i: search.cpp.i
@@ -501,7 +501,7 @@ search.i: search.cpp.i
 # target to preprocess a source file
 search.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/search.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/search.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/search.cpp.i
 .PHONY : search.cpp.i
 
 search.s: search.cpp.s
@@ -511,7 +511,7 @@ search.s: search.cpp.s
 # target to generate assembly for a file
 search.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/search.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/search.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/search.cpp.s
 .PHONY : search.cpp.s
 
 search_rstar.o: search_rstar.cpp.o
@@ -521,7 +521,7 @@ search_rstar.o: search_rstar.cpp.o
 # target to build an object file
 search_rstar.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/search_rstar.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/search_rstar.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/search_rstar.cpp.o
 .PHONY : search_rstar.cpp.o
 
 search_rstar.i: search_rstar.cpp.i
@@ -531,7 +531,7 @@ search_rstar.i: search_rstar.cpp.i
 # target to preprocess a source file
 search_rstar.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/search_rstar.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/search_rstar.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/search_rstar.cpp.i
 .PHONY : search_rstar.cpp.i
 
 search_rstar.s: search_rstar.cpp.s
@@ -541,7 +541,7 @@ search_rstar.s: search_rstar.cpp.s
 # target to generate assembly for a file
 search_rstar.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/search_rstar.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/search_rstar.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/search_rstar.cpp.s
 .PHONY : search_rstar.cpp.s
 
 tinyxml2.o: tinyxml2.cpp.o
@@ -551,7 +551,7 @@ tinyxml2.o: tinyxml2.cpp.o
 # target to build an object file
 tinyxml2.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/tinyxml2.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/tinyxml2.cpp.o
 .PHONY : tinyxml2.cpp.o
 
 tinyxml2.i: tinyxml2.cpp.i
@@ -561,7 +561,7 @@ tinyxml2.i: tinyxml2.cpp.i
 # target to preprocess a source file
 tinyxml2.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/tinyxml2.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/tinyxml2.cpp.i
 .PHONY : tinyxml2.cpp.i
 
 tinyxml2.s: tinyxml2.cpp.s
@@ -571,7 +571,7 @@ tinyxml2.s: tinyxml2.cpp.s
 # target to generate assembly for a file
 tinyxml2.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/tinyxml2.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/tinyxml2.cpp.s
 .PHONY : tinyxml2.cpp.s
 
 xmllogger.o: xmllogger.cpp.o
@@ -581,7 +581,7 @@ xmllogger.o: xmllogger.cpp.o
 # target to build an object file
 xmllogger.cpp.o:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/xmllogger.cpp.o
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/xmllogger.cpp.o
 .PHONY : xmllogger.cpp.o
 
 xmllogger.i: xmllogger.cpp.i
@@ -591,7 +591,7 @@ xmllogger.i: xmllogger.cpp.i
 # target to preprocess a source file
 xmllogger.cpp.i:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/xmllogger.cpp.i
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/xmllogger.cpp.i
 .PHONY : xmllogger.cpp.i
 
 xmllogger.s: xmllogger.cpp.s
@@ -601,7 +601,7 @@ xmllogger.s: xmllogger.cpp.s
 # target to generate assembly for a file
 xmllogger.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/xmllogger.cpp.s
+	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Debug && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/xmllogger.cpp.s
 .PHONY : xmllogger.cpp.s
 
 # Help Target
@@ -618,7 +618,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... PPLIB"
-	@echo "... RstarSearchVisualOn"
+	@echo "... RstarSearch"
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"

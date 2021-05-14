@@ -201,17 +201,17 @@ PPLIB/fast:
 .PHONY : PPLIB/fast
 
 #=============================================================================
-# Target rules for targets named RstarSearchVisualOn
+# Target rules for targets named RstarSearch
 
 # Build rule for target.
-RstarSearchVisualOn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RstarSearchVisualOn
-.PHONY : RstarSearchVisualOn
+RstarSearch: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 RstarSearch
+.PHONY : RstarSearch
 
 # fast build rule for target.
-RstarSearchVisualOn/fast:
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearchVisualOn.dir/build.make Src/CMakeFiles/RstarSearchVisualOn.dir/build
-.PHONY : RstarSearchVisualOn/fast
+RstarSearch/fast:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/build
+.PHONY : RstarSearch/fast
 
 #=============================================================================
 # Target rules for targets named testbench
@@ -240,7 +240,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... PPLIB"
-	@echo "... RstarSearchVisualOn"
+	@echo "... RstarSearch"
 	@echo "... testbench"
 .PHONY : help
 

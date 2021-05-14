@@ -34,14 +34,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Debug" TYPE EXECUTABLE FILES "/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/bin/Release/RstarSearchVisualOn")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearchVisualOn" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearchVisualOn")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Debug" TYPE EXECUTABLE FILES "/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/bin/Release/RstarSearch")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearch" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearch")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/usr/local/lib"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearchVisualOn")
+        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearch")
       if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearchVisualOn")
+        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Debug/RstarSearch")
       endif()
     endif()
   endif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
@@ -49,14 +49,14 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Release" TYPE EXECUTABLE FILES "/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/bin/Release/RstarSearchVisualOn")
-    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearchVisualOn" AND
-       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearchVisualOn")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/Bin/Release" TYPE EXECUTABLE FILES "/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/bin/Release/RstarSearch")
+    if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearch" AND
+       NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearch")
       execute_process(COMMAND /usr/bin/install_name_tool
         -delete_rpath "/usr/local/lib"
-        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearchVisualOn")
+        "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearch")
       if(CMAKE_INSTALL_DO_STRIP)
-        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearchVisualOn")
+        execute_process(COMMAND "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/Bin/Release/RstarSearch")
       endif()
     endif()
   endif("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
