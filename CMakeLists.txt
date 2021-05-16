@@ -13,7 +13,7 @@ project(${PROJECT_NAME})
 
 
 if (${MINGW})
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O2 -Wall -Wextra -static -static-libgcc -static-libstdc++")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3 -Wall -Wextra -static -static-libgcc -static-libstdc++")
 else ()
     if (${VISUAL_MODE})
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DVISUAL_MODE=1 -std=c++17 -O3 -Wall -Wextra")

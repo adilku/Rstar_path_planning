@@ -37,7 +37,6 @@ double Search_Rstar::get_heuristic(Point from, Point to, const EnvironmentOption
         return CN_CELL_SIZE * abs(abs(to.i - from.i) - abs(to.j - from.j)) +
                CN_SQRT_TWO * std::min(abs(to.i - from.i), abs(to.j - from.j));
     } else if (options.metrictype == CN_SP_MT_MANH) {
-
         return CN_CELL_SIZE * (abs(from.i - to.i) + abs(from.j - to.j));
     } else if (options.metrictype == CN_SP_MT_EUCL) {
         return CN_CELL_SIZE * sqrt((to.i - from.i) * (to.i - from.i) + (to.j - from.j) * (to.j - from.j));
@@ -49,7 +48,6 @@ double Search_Rstar::get_heuristic(Point from, Point to, const EnvironmentOption
 
 
 void Search_Rstar::updateState(NodeRstar &state, open_rstar &open, const EnvironmentOptions &options, const Map &map) {
-
     double W = options.hweight;
     Point start = map.getCoordinatesStart();
     Point goal = map.getCoordinatesGoal();
@@ -97,7 +95,7 @@ Search_Rstar::ReevaluteState(ILogger *Logger, NodeRstar &state, open_rstar &open
     if (state.path_to_bp == nullptr ||
         state.bp->g + state.C_low > W * get_heuristic(start, {state.i, state.j}, options)) {
         NodeRstar min_state;
-        if (state.path_to_bp->size() > 1) {
+        if (state.predecessors_nodes->size() > 1) {
             state.bp = &(state.predecessors_nodes->begin()->second);
         }
         state.avoid = 1;
@@ -109,12 +107,10 @@ Search_Rstar::ReevaluteState(ILogger *Logger, NodeRstar &state, open_rstar &open
 
 SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, const EnvironmentOptions &options) {
     // (node_size * map) / screen = 0.5 -> node_size = (0.5 screen) / map
-
-    size_t width = map.getMapWidth();
-    size_t height = map.getMapHeight();
-
     //------------------visual init
 #ifdef VISUAL_MODE
+    size_t width = map.getMapWidth();
+    size_t height = map.getMapHeight();
     double coef = 0.5;
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
@@ -211,7 +207,6 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
             }
             std::vector<std::pair<int, int>> neighbours;
             CheckRandomNeighbours(s, map, options, neighbours);
-
             if (get_heuristic({s.i, s.j}, goal, options) <= options.radius) {
                 neighbours.emplace_back(goal.i, goal.j);
                 //break;

@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/config.h
-string
--
-
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.h
 search_rstar.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.h
@@ -32,10 +28,6 @@ unordered_map
 list
 -
 
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/main.cpp
-mission.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.h
-
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/map.h
 iostream
 -
@@ -54,37 +46,7 @@ optional
 tinyxml2.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/tinyxml2.h
 
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.cpp
-mission.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.h
-iostream
--
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/mission.h
-map.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/map.h
-config.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/config.h
-search.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
-ilogger.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/ilogger.h
-searchresult.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/searchresult.h
-environmentoptions.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/environmentoptions.h
-search.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
-xmllogger.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/xmllogger.h
-search_rstar.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.h
-
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node.h
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp
-node_rstar.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
 list
@@ -114,12 +76,6 @@ node.h
 gl_const.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/gl_const.h
 
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.cpp
-open_rstar.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
-iostream
--
-
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.h
 unordered_map
 -
@@ -133,16 +89,6 @@ node_rstar.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.h
 gl_const.h
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/gl_const.h
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.cpp
-search.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
-tuple
--
-chrono
--
-open_container.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_container.h
 
 /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search.h
 ilogger.h
@@ -257,18 +203,6 @@ android/log.h
 -
 assert.h
 -
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/xmllogger.cpp
-xmllogger.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/xmllogger.h
-iostream
--
-
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/xmllogger.h
-tinyxml2.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/tinyxml2.h
-ilogger.h
-/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/ilogger.h
 
 /usr/local/include/SFML/Config.hpp
 TargetConditionals.h
