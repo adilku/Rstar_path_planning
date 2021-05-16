@@ -2,7 +2,6 @@ file(REMOVE_RECURSE
   "../../../bin/Release/RstarSearch"
   "../../../bin/Release/RstarSearch.pdb"
   "CMakeFiles/RstarSearch.dir/config.cpp.o"
-  "CMakeFiles/RstarSearch.dir/draw_path.cpp.o"
   "CMakeFiles/RstarSearch.dir/environmentoptions.cpp.o"
   "CMakeFiles/RstarSearch.dir/main.cpp.o"
   "CMakeFiles/RstarSearch.dir/map.cpp.o"

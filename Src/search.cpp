@@ -134,8 +134,8 @@ SearchResult Search::startSearch(ILogger *Logger, const Map &map, const Environm
     auto endTime = std::chrono::high_resolution_clock::now();
     sresult.time = (std::chrono::duration<double>(endTime - startTime)).count();
     sresult.hppath = &hppath;
-    sresult.lppath = std::make_shared<std::list<Node>>(lppath);
-    return sresult;
+    sresult.lppath = std::make_unique<std::list<Node>>(lppath);
+    return std::move(sresult);
 }
 
 void Search::makePrimaryPath(Node *curNode) {

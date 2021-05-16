@@ -89,10 +89,9 @@ Search_Rstar::ReevaluteState(ILogger *Logger, NodeRstar &state, open_rstar &open
     Point start = map.getCoordinatesStart();
     SearchResult local_res = cur_search.startSearch(Logger, map, options, {state.i, state.j},
                                                     {state.bp->i, state.bp->j});
-
     sresult.nodescreated += local_res.numberofsteps;
     if (local_res.pathfound) {
-        state.path_to_bp = local_res.lppath;
+        state.path_to_bp = std::move(local_res.lppath);
         state.C_low = local_res.pathlength;
     }
     if (state.path_to_bp == nullptr ||
@@ -162,7 +161,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
                           get_heuristic(start, goal, options),
                           0,
                           nullptr,
-                          std::make_shared<std::map<double, NodeRstar> >(),
+                          std::make_shared<std::map<double, NodeRstar>>(),
                           nullptr,
                           0);
 
@@ -170,7 +169,7 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
                          INT_MAX,
                          INT_MAX,
                          nullptr,
-                         std::make_shared<std::map<double, NodeRstar> >(),
+                         std::make_shared<std::map<double, NodeRstar>>(),
                          nullptr,
                          0);
 
@@ -200,7 +199,6 @@ SearchResult_rstar Search_Rstar::startSearch(ILogger *Logger, const Map &map, co
 #endif
         } else {
             close_map[{s.i, s.j}] = s;
-            //std::shared_ptr<NodeRstar>s_pointer = std::make_shared<NodeRstar> (close_map[{s.i,s.j}]);
             NodeRstar * s_pointer = &close_map[{s.i, s.j}];
 #ifdef VISUAL_MODE
             render.draw_point(window, event, s.i, s.j, 2);

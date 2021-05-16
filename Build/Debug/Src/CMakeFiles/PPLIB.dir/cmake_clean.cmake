@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PPLIB.dir/config.cpp.o"
-  "CMakeFiles/PPLIB.dir/draw_path.cpp.o"
   "CMakeFiles/PPLIB.dir/environmentoptions.cpp.o"
   "CMakeFiles/PPLIB.dir/map.cpp.o"
   "CMakeFiles/PPLIB.dir/mission.cpp.o"

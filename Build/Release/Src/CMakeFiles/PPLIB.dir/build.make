@@ -194,22 +194,9 @@ Src/CMakeFiles/PPLIB.dir/search_rstar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/search_rstar.cpp.s"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/search_rstar.cpp -o CMakeFiles/PPLIB.dir/search_rstar.cpp.s
 
-Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
-Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o: ../../Src/draw_path.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o"
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/draw_path.cpp.o -c /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.cpp
-
-Src/CMakeFiles/PPLIB.dir/draw_path.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PPLIB.dir/draw_path.cpp.i"
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.cpp > CMakeFiles/PPLIB.dir/draw_path.cpp.i
-
-Src/CMakeFiles/PPLIB.dir/draw_path.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PPLIB.dir/draw_path.cpp.s"
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/draw_path.cpp -o CMakeFiles/PPLIB.dir/draw_path.cpp.s
-
 Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
 Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.o: ../../Src/open_rstar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.o"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/open_rstar.cpp.o -c /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/open_rstar.cpp
 
 Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.i: cmake_force
@@ -222,7 +209,7 @@ Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.s: cmake_force
 
 Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.o: Src/CMakeFiles/PPLIB.dir/flags.make
 Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.o: ../../Src/node_rstar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.o"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PPLIB.dir/node_rstar.cpp.o -c /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Src/node_rstar.cpp
 
 Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.i: cmake_force
@@ -244,7 +231,6 @@ PPLIB_OBJECTS = \
 "CMakeFiles/PPLIB.dir/xmllogger.cpp.o" \
 "CMakeFiles/PPLIB.dir/open_container.cpp.o" \
 "CMakeFiles/PPLIB.dir/search_rstar.cpp.o" \
-"CMakeFiles/PPLIB.dir/draw_path.cpp.o" \
 "CMakeFiles/PPLIB.dir/open_rstar.cpp.o" \
 "CMakeFiles/PPLIB.dir/node_rstar.cpp.o"
 
@@ -260,12 +246,11 @@ Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/tinyxml2.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/xmllogger.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/open_container.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/search_rstar.cpp.o
-Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/open_rstar.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/node_rstar.cpp.o
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/build.make
 Src/libPPLIB.a: Src/CMakeFiles/PPLIB.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libPPLIB.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libPPLIB.a"
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && $(CMAKE_COMMAND) -P CMakeFiles/PPLIB.dir/cmake_clean_target.cmake
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release/Src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PPLIB.dir/link.txt --verbose=$(VERBOSE)
 

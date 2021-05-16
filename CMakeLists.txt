@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-set(VISUAL_MODE 1)
+set(VISUAL_MODE 0)
 
 #if (${VISUAL_MODE})
     #set(PROJECT_NAME "RstarSearchVisualOn")

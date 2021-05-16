@@ -25,7 +25,7 @@ struct SearchResult
 {
         bool pathfound;
         float pathlength; //if path not found, then pathlength=0
-        std::shared_ptr<std::list<Node>> lppath; //path as the sequence of adjacent nodes (see above)
+        std::unique_ptr<std::list<Node>> lppath; //path as the sequence of adjacent nodes (see above)
                                        //This is a pointer to the list of nodes that is actually created and hadled by Search class,
                                        //so no need to re-create them, delete them etc. It's just a trick to save some memory
         const std::list<Node>* hppath; //path as the sequence of non-adjacent nodes: "sections" (see above)

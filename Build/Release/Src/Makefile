@@ -247,36 +247,6 @@ config.cpp.s:
 	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/config.cpp.s
 .PHONY : config.cpp.s
 
-draw_path.o: draw_path.cpp.o
-
-.PHONY : draw_path.o
-
-# target to build an object file
-draw_path.cpp.o:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/draw_path.cpp.o
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/draw_path.cpp.o
-.PHONY : draw_path.cpp.o
-
-draw_path.i: draw_path.cpp.i
-
-.PHONY : draw_path.i
-
-# target to preprocess a source file
-draw_path.cpp.i:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/draw_path.cpp.i
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/draw_path.cpp.i
-.PHONY : draw_path.cpp.i
-
-draw_path.s: draw_path.cpp.s
-
-.PHONY : draw_path.s
-
-# target to generate assembly for a file
-draw_path.cpp.s:
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/PPLIB.dir/build.make Src/CMakeFiles/PPLIB.dir/draw_path.cpp.s
-	cd /Users/adilkhankussidenov/Documents/PathPlanning/git_rstar/Rstar_path_planning/Build/Release && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/RstarSearch.dir/build.make Src/CMakeFiles/RstarSearch.dir/draw_path.cpp.s
-.PHONY : draw_path.cpp.s
-
 environmentoptions.o: environmentoptions.cpp.o
 
 .PHONY : environmentoptions.o
@@ -622,9 +592,6 @@ help:
 	@echo "... config.o"
 	@echo "... config.i"
 	@echo "... config.s"
-	@echo "... draw_path.o"
-	@echo "... draw_path.i"
-	@echo "... draw_path.s"
 	@echo "... environmentoptions.o"
 	@echo "... environmentoptions.i"
 	@echo "... environmentoptions.s"
